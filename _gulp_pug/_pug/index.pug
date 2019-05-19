@@ -1,0 +1,76 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная' + ' - Masuma' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    include ./_include/_header
+
+    // Content
+    .content
+
+    .section
+      .container
+        p 1
+      
+    .section.about
+      .container
+
+        .row
+          .col-md-6
+            .section__head
+              .h1.nowrap-md о компании 
+              .small // Японское качество по доступной цене!
+
+            .about__row
+              .row
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--1
+                    div
+                      img(src="./images/img-about-1.svg", alt="")
+                    div
+                      p Мы ответим на все ваши вопросы о продукции 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--2
+                    div
+                      img(src="./images/img-about-2.svg", alt="")
+                    div
+                      p Поможем в формировании заказа 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--3
+                    div
+                      img(src="./images/img-about-3.svg", alt="")
+                    div
+                      p Вы сможете работать с дистрибьютерами напрямую
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--4
+                    div
+                      img(src="./images/img-about-4.svg", alt="")
+                    div
+                      p Организуем поставку от ближайшего дистрибьютера
+
+          .col-md-6
+            .about__info
+              p Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производителях запчастей. Сейчас это уже 45 групп товара и около 8000 наименований. 
+              p Ежегодно вводится до 500 новых позиций и 2-3 новые группы. В этом году список товаров пополнился тормозными дисками и ступенчатыми узлами. 
+                a(href="#!") Подробнее
+
+    .section
+      .container
+        p 2
+
+    include ./_include/_footer
+    div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

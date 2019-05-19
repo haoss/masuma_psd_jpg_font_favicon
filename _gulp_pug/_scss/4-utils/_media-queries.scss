@@ -1,0 +1,116 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (min-width: 1999px) {}
+
+@media only screen and (max-width: 1599px) {}
+
+@media only screen and (max-width: 1439px) {}
+
+@media only screen and (max-width: 1199px) {
+  .about {
+    &__row {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about {
+    .section__head {
+      margin-left: 33px;
+    }
+    &__info {
+      margin-top: 100px;
+    }
+    &__row {
+      margin-left: 55px;
+    }
+    &__block {
+      &--3 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nowrap-md {
+    white-space: nowrap !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    .section__head {
+      margin-left: 12px;
+    }
+    &__row {
+      margin-left: 10px;
+    }
+    &__info {
+      margin-top: 35px;
+      padding-left: 15px;
+      p {
+        position: relative;
+        z-index: 5;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: -30px;
+        bottom: -35px;
+        left: -100px;
+        right: -100px;
+        background: url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABLAAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNUJBQ0REOTdBNUQxMUU5ODExQUU1NTBGRDk0MDg4RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNUJBQ0REQTdBNUQxMUU5ODExQUU1NTBGRDk0MDg4RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1QkFDREQ3N0E1RDExRTk4MTFBRTU1MEZEOTQwODhGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1QkFDREQ4N0E1RDExRTk4MTFBRTU1MEZEOTQwODhGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAAFEwAABZsAAAZTAAAIYf/bAIQAAwICAgICAwICAwUDAwMFBQQDAwQFBgUFBQUFBggGBwcHBwYICAkKCgoJCAwMDAwMDA4ODg4OEBAQEBAQEBAQEAEDBAQGBgYMCAgMEg4MDhIUEBAQEBQREBAQEBARERAQEBAQEBEQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/8IAEQgAQABAAwERAAIRAQMRAf/EAH0AAQEAAAAAAAAAAAAAAAAAAAAFAQEBAAAAAAAAAAAAAAAAAAAABxABAQEAAAAAAAAAAAAAAAAAADJgEQADAQAAAAAAAAAAAAAAAAAAAVECEgEAAAAAAAAAAAAAAAAAAABgEwACAgMBAQAAAAAAAAAAAAAA8BEhATFxsWD/2gAMAwEAAhEDEQAAAbslqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//aAAgBAQABBQKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpS/9oACAECAAEFAsB//9oACAEDAAEFAsB//9oACAECAgY/AgH/2gAIAQMCBj8CAf/aAAgBAQEGPwK6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTP/aAAgBAQMBPyFBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBo/9oACAECAwE/IfgP/9oACAEDAwE/IfgP/9oADAMBAAIRAxEAABBtttttttttttttttttttttttttttttttv/2gAIAQEDAT8QViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbP/aAAgBAgMBPxDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfD/2gAIAQMDAT8Q10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010/9k=') 0 0 repeat;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .h1, h1 {
+    font-size: 38px;
+  }
+  .about {
+    .section {
+      &__head {
+        &::before {
+          display: none;
+        }
+        padding-left: 23px;
+        margin-left: 0;
+      }
+    }
+    &__row {
+      margin: 0 auto;
+      width: 244px;
+    }
+    &__block {
+      &--4 {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 319px) {}
+
+/*==========  Mobile First Method  ==========*/
+@media only screen and (min-width: 320px) {}
+
+@media only screen and (min-width: 480px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1440px) {}
+
+@media only screen and (max-width: 1600px) {}
+
+@media only screen and (min-width: 1920px) {}

@@ -1,0 +1,89 @@
+/* modules */
+
+.section {
+  &__head {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 27px;
+      width: 34px;
+      height: 1px;
+      background: $color-white;
+    }
+    .h1, h1 {
+      color: $color-white;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .small {
+      font-size: 14px;
+      color: #fbd0ab;
+      font-weight: 500;
+    }
+  }
+}
+
+.about {
+  background: $color-orange;
+  color: $color-white;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: calc(50% + 10px);
+    background: url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABLAAD/4QMvaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE4IChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNUJBQ0REOTdBNUQxMUU5ODExQUU1NTBGRDk0MDg4RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNUJBQ0REQTdBNUQxMUU5ODExQUU1NTBGRDk0MDg4RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1QkFDREQ3N0E1RDExRTk4MTFBRTU1MEZEOTQwODhGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1QkFDREQ4N0E1RDExRTk4MTFBRTU1MEZEOTQwODhGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4AJkFkb2JlAGTAAAAAAQMAFQQDBgoNAAAFEwAABZsAAAZTAAAIYf/bAIQAAwICAgICAwICAwUDAwMFBQQDAwQFBgUFBQUFBggGBwcHBwYICAkKCgoJCAwMDAwMDA4ODg4OEBAQEBAQEBAQEAEDBAQGBgYMCAgMEg4MDhIUEBAQEBQREBAQEBARERAQEBAQEBEQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/8IAEQgAQABAAwERAAIRAQMRAf/EAH0AAQEAAAAAAAAAAAAAAAAAAAAFAQEBAAAAAAAAAAAAAAAAAAAABxABAQEAAAAAAAAAAAAAAAAAADJgEQADAQAAAAAAAAAAAAAAAAAAAVECEgEAAAAAAAAAAAAAAAAAAABgEwACAgMBAQAAAAAAAAAAAAAA8BEhATFxsWD/2gAMAwEAAhEDEQAAAbslqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//aAAgBAQABBQKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpSlKUpS/9oACAECAAEFAsB//9oACAEDAAEFAsB//9oACAECAgY/AgH/2gAIAQMCBj8CAf/aAAgBAQEGPwK6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTLpl0y6ZdMumXTP/aAAgBAQMBPyFBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBoQaEGhBo/9oACAECAwE/IfgP/9oACAEDAwE/IfgP/9oADAMBAAIRAxEAABBtttttttttttttttttttttttttttttttv/2gAIAQEDAT8QViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbFYmPMGxWJjzBsViY8wbP/aAAgBAgMBPxDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfDfD/2gAIAQMDAT8Q10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010/9k=') 0 0 repeat;
+  }
+  &__info {
+    font-size: 17px;
+    position: relative;
+    padding-left: 30px;
+    p {
+      line-height: 1.5;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      color: $color-white;
+    }
+  }
+  &__block {
+    img {
+      display: block;
+      width: 46px;
+      height: 46px;
+    }
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    &>div {
+      &+div {
+        padding-left: 20px;
+      }
+    }
+    p {
+      margin-bottom: 0;
+      max-width: 185px;
+    }
+    &--1, &--2 {
+      margin-bottom: 30px;
+    }
+  }
+  &__row {
+    margin-left: 50px;
+  }
+  &>.container {
+    z-index: 5;
+    position: relative;
+  }
+}
+
