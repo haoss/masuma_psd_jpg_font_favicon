@@ -14,8 +14,13 @@ html(lang="ru")
 
     include ./_include/_header
 
-    // Content
-    .content
+    // Slider
+    .main-slider
+      .main-slider__init
+        div
+          .main-slider__block(style="background-image: url('./tmp/main-slide-2.png');")
+        div
+          .main-slider__block(style="background-image: url('./tmp/main-slide-1.png');")
 
     .section
       .container
@@ -28,7 +33,7 @@ html(lang="ru")
           .col-md-6
             .section__head
               .h1.nowrap-md о компании 
-              .small // Японское качество по доступной цене!
+              .small.nowrap-md // Японское качество по доступной цене!
 
             .about__row
               .row
@@ -63,9 +68,40 @@ html(lang="ru")
               p Ежегодно вводится до 500 новых позиций и 2-3 новые группы. В этом году список товаров пополнился тормозными дисками и ступенчатыми узлами. 
                 a(href="#!") Подробнее
 
-    .section
+    .section.main-map
       .container
-        p 2
+
+        .main-map__tab
+          ul(role="tablist").nav
+            li
+              a#map1-tab.active(data-toggle="tab" href="#map1" role="tab" aria-controls="map1" aria-selected="true") 
+                span 
+                  i.ion-ios-toggle
+                  | Главный офис 
+            li
+              a#map2-tab(data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false") 
+                span Магазины
+
+          .main-map__office.is-active
+            .main-map__office-title Связаться с нами:
+            .main-map__office-address г.Киев, ул. Марко Вовчок, 12/14
+            p +380 98 765 43 21
+              br
+              | +380 66 765 43 21  
+              span(style="color: #777777; font-size: 14px;") (Telegram & Viber)
+            p
+              a(href="#!") info@site_name.pro
+      
+      .tab-content.tab-content--main-map
+        #map1.tab-pane.active(role='tabpanel' aria-labelledby='map1-tab')
+
+          .map__wrapper
+            img(src="./tmp/main-map-bottom-1.png", alt="")
+
+        #map2.tab-pane(role='tabpanel' aria-labelledby='map2-tab')
+          
+          .map__wrapper
+            img(src="./tmp/main-map-bottom-1.png", alt="")
 
     include ./_include/_footer
     div(style="height: 1000px; background-color: #000")

@@ -8,27 +8,134 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="./font/dinpro/stylesheet.css">
         <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick.css">
+        <link rel="stylesheet" href="./js/libs/slick/slick-theme.css">
         <link rel="stylesheet" href="./css/style.min.css">
     </head>
     <body>
         <!-- Preloader-->
         <!-- Header-->
         <header class="header">
-            <div class="container">
-                <nav class="navigation" role="navigation">
-                    <ul>
-                        <li class="active"><a href="#" title="Главная">Главная</a></li>
-                        <li><a href="#" title="О нас">О нас</a></li>
-                        <li><a href="#" title="Продукция">Продукция</a></li>
-                        <li><a href="#" title="Сотрудничество">Сотрудничество</a></li>
-                        <li><a href="#" title="Наши магазины">Наши магазины</a></li>
-                        <li><a href="#" title="Контакты">Контакты</a></li>
-                    </ul>
-                </nav>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-wrapper">
+                        <div>
+                            <div class="header__catalog">
+                                <button class="header__catalog-btn" type="button"><i class="ion-navicon-round"></i>Каталог</button>
+                                <nav class="header__catalog-nav">
+                                    <ul>
+                                        <li><a href="#!">Автоэлектрика</a></li>
+                                        <li><a href="#!">Крепления для автомобилей </a></li>
+                                        <li><a href="#!">Двигатель и компоненты </a></li>
+                                        <li><a href="#!">Стеклоочистители</a></li>
+                                        <li><a href="#!">Инструменты </a></li>
+                                        <li><a href="#!">Материалы для установки шин </a></li>
+                                        <li><a href="#!">Топливная система </a></li>
+                                        <li><a href="#!">Коробка передач и шасси </a></li>
+                                        <li><a href="#!">Фильтры</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header__menu">
+                                <button class="header__menu-btn" type="button">Меню сайта</button>
+                                <nav class="header__menu-nav">
+                                    <ul>
+                                        <li><a href="#!">О компании</a></li>
+                                        <li><a href="#!">Гарантия и сертификаты</a></li>
+                                        <li><a href="#!">Где купить</a></li>
+                                        <li><a href="#!">Партнерам</a></li>
+                                        <li><a href="#!">Новости</a></li>
+                                        <li><a href="#!">Контакты</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header__enter">
+                                <button class="header__enter-btn" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512">
+                                        <path d="M382 573a20 20 0 1 1 0-40 20 20 0 0 1 0 40zm65.7-87.4a53.9 53.9 0 0 0-49.2-31.6h-62.4a53 53 0 0 0-50.1 33.8c-1 2.7-2.4 6.2-3.7 10.2h-131a20 20 0 0 0-14.3 6l-34.4 35.5a20 20 0 0 0 .1 28l35 35.5a20 20 0 0 0 14.3 6h65a20 20 0 1 0 0-40h-56.6L145 553.3l14.8-15.3h137.5a20 20 0 0 0 19.4-15.2c1.6-6.7 3.7-13 6.6-20.6 2-5 6.8-8.2 12.8-8.2h62.4c5.6 0 10.5 3 12.7 8 5.3 12 11.8 30.5 11.8 51a133 133 0 0 1-11.7 51.8c-2.2 5-7.1 8.2-12.6 8.2h-63.2c-5.5 0-10.7-3.6-12.9-8.9a133 133 0 0 1-6.2-19.8 20 20 0 0 0-38.9 9.4c2.4 9.7 5 18 8.2 25.7a54 54 0 0 0 49.8 33.6h63.2a53.6 53.6 0 0 0 49.2-32.2c7-15.9 15.2-40.5 15.1-68 0-27.4-8.4-51.6-15.3-67.2zM102.5 633c0 11-9 20-20 20H11.7a60.7 60.7 0 0 1-59.4-73.3A261 261 0 0 1 125.6 386a135.9 135.9 0 1 1 162.8 0 258 258 0 0 1 10 3.5 20 20 0 1 1-14 37.4 219 219 0 0 0-82.5-13.9 221 221 0 0 0-210.4 175A20.9 20.9 0 0 0 11.7 613h70.8c11 0 20 9 20 20zm99.8-260.1a261.6 261.6 0 0 1 9.4 0A96.1 96.1 0 0 0 207 181a96.1 96.1 0 0 0-4.7 191.9z"></path>
+                                    </svg>Вход
+                                </button>
+                                <div class="header__enter-modal">
+                                    <form action="#!">
+                                        <fieldset>
+                                            <legend>Войти на сайт</legend>
+                                            <div class="form-group">
+                                                <label class="d-none" for="enterName">Ваше имя</label>
+                                                <input class="form-control" id="enterName" type="text" placeholder="Ваше имя">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="d-none" for="enterEmail">E mail</label>
+                                                <input class="form-control" id="enterEmail" type="text" placeholder="E mail">
+                                            </div>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary btn-block" type="submit">войти на сайт</button><small><a class="text-white" href="#!">Забыли пароль?</a></small>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div class="header__enter-info">
+                                        <p>еще не зарегистрированы?</p><small>Вы оптовый продавец, пожалуйста свяжитесь с нами</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <nav class="header__language">
+                                <ul>
+                                    <li class="active"><span>ru</span></li>
+                                    <li><a href="#!">en</a></li>
+                                    <li><a href="#!">fr</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-wrapper">
+                        <div>
+                            <div class="header__logo"><a href="#!"><img src="./images/logo.png" alt=""></a><span class="span">Официальный диллер <br>в <span>Украине</span></span></div>
+                        </div>
+                        <div>
+                            <div class="header__phones">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512">
+                                    <path d="M356.4 653c13.5 0 27-1.7 40-5.2a61 61 0 0 0 36.3-28l26-43.2a30.1 30.1 0 0 0-9-40.6L346 466.9a30.3 30.3 0 0 0-40.5 6.5l-30.2 38.9c-4 5-11 6.6-16.6 3.4l-5.7-3.1c-19-10.4-42.7-23.3-90.5-71S102 370 91.5 351l-3.2-5.8a13 13 0 0 1 3.4-16.6l38.8-30.1a30.3 30.3 0 0 0 6.6-40.6L68 154.4a30.1 30.1 0 0 0-40.6-9.1l-43.3 26c-13.6 8-23.6 21-27.9 36.2-15.6 56.8-3.9 155 140.7 299.6C212 622 297.5 653 356.4 653zM-27.3 212a44.2 44.2 0 0 1 20.2-26l43.3-26a13 13 0 0 1 17.6 3.9l37.6 56.4 31.5 47.2a13.1 13.1 0 0 1-2.9 17.6l-38.8 30.2a29.9 29.9 0 0 0-7.9 38.3l3.1 5.6c11 20 24.5 45 74 94.4s74.3 63 94.3 74l5.6 3c13 7.3 29.3 4 38.4-7.9l30.2-38.8a13.1 13.1 0 0 1 17.5-2.8l103.7 69.1a13 13 0 0 1 4 17.6l-26 43.4c-5.8 9.8-15.1 17-26.1 20.1-52.5 14.4-144.2 2.5-283-136.3S-41.7 264.5-27.3 212zM241.1 226.3c80.1.1 145 65 145.1 145.1a8.5 8.5 0 0 0 17 0c0-89.5-72.6-162-162-162.1a8.5 8.5 0 0 0 0 17z"></path>
+                                    <path d="M241.1 277.5a94 94 0 0 1 93.9 93.9 8.5 8.5 0 1 0 17 0 111 111 0 0 0-110.9-111 8.5 8.5 0 1 0 0 17.1z"></path>
+                                    <path d="M241.1 328.7a42.7 42.7 0 0 1 42.7 42.7 8.5 8.5 0 1 0 17 0c0-33-26.7-59.7-59.7-59.7a8.5 8.5 0 1 0 0 17z"></path>
+                                </svg>
+                                <div><a href="tel:">+380 98 765 43 21</a></div>
+                                <div><a href="tel:">+380 66 765 43 21</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="header__address">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512">
+                                    <path d="M119 491.5a1418.6 1418.6 0 0 0 61.8 80.4h-42a8.5 8.5 0 1 0 0 17.1h136.5a8.5 8.5 0 1 0 0-17h-42.1l5.7-7.1c14-17 35-43.7 56.1-73.4 21-29 39.8-59.3 56.4-90.9 17.4-34.2 26.3-62.6 26.3-84.4 0-45.4-18-88.8-50-120.9a8.5 8.5 0 1 0-12 12c28.8 29 45 68 44.9 108.9 0 19-8.2 44.9-24.4 76.7a732.8 732.8 0 0 1-55.1 88.7 1388 1388 0 0 1-67.6 87.3 8.6 8.6 0 0 1-13 0 1514 1514 0 0 1-67.6-87.3 732.8 732.8 0 0 1-55-88.7c-16.3-31.8-24.5-57.6-24.5-76.7a154 154 0 0 1 213.4-141.8 8.5 8.5 0 1 0 6.7-15.7A170.8 170.8 0 0 0 36.3 316.2c0 21.8 8.9 50.2 26.3 84.4 16.6 31.6 35.4 62 56.4 90.9z"></path>
+                                    <path d="M207 239.1a8.5 8.5 0 0 0 0-17 85.3 85.3 0 1 0 60.3 25 8.5 8.5 0 1 0-12 12 68.3 68.3 0 1 1-48.3-20zM-22.5 648.7h459c9.5.1 18.2-4.8 23-13 4.6-7.6 4.7-17 .3-24.8l-52.5-93.8a26.5 26.5 0 0 0-23.2-13.4h-60.8a8.5 8.5 0 0 0 0 17H384c3.4 0 6.6 1.7 8.3 4.7l52.5 93.9a7.7 7.7 0 0 1 0 7.8 9.4 9.4 0 0 1-8.4 4.6h-459a9.4 9.4 0 0 1-8.3-4.6 7.7 7.7 0 0 1 0-7.8l52.4-94c1.7-2.9 4.9-4.6 8.3-4.6h60.8a8.5 8.5 0 1 0 0-17H30c-9.6-.1-18.5 5-23.2 13.4l-52.5 93.8a24.7 24.7 0 0 0 .3 24.9c4.8 8.1 13.5 13 23 13z"></path>
+                                    <path d="M369.1 546.3H335c-1.7 0-3.3.5-4.7 1.5l-25.6 17A8.5 8.5 0 0 0 314 579l23.5-15.6H369a8.5 8.5 0 0 0 0-17zM318 606c0 4.8 3.8 8.6 8.5 8.6h68.2a8.5 8.5 0 1 0 0-17h-68.2a8.5 8.5 0 0 0-8.6 8.5zM104.6 580.5a8.5 8.5 0 0 0 4.7-15.7l-25.6-17c-1.4-1-3-1.5-4.7-1.5H44.9a8.5 8.5 0 0 0 0 17.1h31.5L100 579c1.4 1 3 1.5 4.7 1.5zM19.3 597.5a8.5 8.5 0 1 0 0 17.1h68.2a8.5 8.5 0 1 0 0-17H19.3z"></path>
+                                </svg>г.Киев, ул. Марко Вовчок, 12/14<br><small>с 09:00 до 18:00, Сб - Пт</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
-        <!-- Content-->
-        <div class="content"></div>
+        <div class="header-holder"></div>
+        <!-- Slider-->
+        <div class="main-slider">
+            <div class="main-slider__init">
+                <div>
+                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-2.png');"></div>
+                </div>
+                <div>
+                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-1.png');"></div>
+                </div>
+            </div>
+        </div>
         <div class="section">
             <div class="container">
                 <p>1</p>
@@ -40,7 +147,7 @@
                     <div class="col-md-6">
                         <div class="section__head">
                             <div class="h1 nowrap-md">о компании </div>
-                            <div class="small">// Японское качество по доступной цене!</div>
+                            <div class="small nowrap-md">// Японское качество по доступной цене!</div>
                         </div>
                         <div class="about__row">
                             <div class="row">
@@ -88,15 +195,54 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section main-map">
             <div class="container">
-                <p>2</p>
+                <div class="main-map__tab">
+                    <ul class="nav" role="tablist">
+                        <li><a class="active" id="map1-tab" data-toggle="tab" href="#map1" role="tab" aria-controls="map1" aria-selected="true"> <span> <i class="ion-ios-toggle"></i>Главный офис </span></a></li>
+                        <li><a id="map2-tab" data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false"> <span>Магазины</span></a></li>
+                    </ul>
+                    <div class="main-map__office is-active">
+                        <div class="main-map__office-title">Связаться с нами:</div>
+                        <div class="main-map__office-address">г.Киев, ул. Марко Вовчок, 12/14</div>
+                        <p>+380 98 765 43 21<br>+380 66 765 43 21  <span style="color: #777777; font-size: 14px;">(Telegram & Viber)</span></p>
+                        <p><a href="#!">info@site_name.pro</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content tab-content--main-map">
+                <div class="tab-pane active" id="map1" role="tabpanel" aria-labelledby="map1-tab">
+                    <div class="map__wrapper"><img src="./tmp/main-map-bottom-1.png" alt=""></div>
+                </div>
+                <div class="tab-pane" id="map2" role="tabpanel" aria-labelledby="map2-tab">
+                    <div class="map__wrapper"><img src="./tmp/main-map-bottom-1.png" alt=""></div>
+                </div>
             </div>
         </div>
         <!-- Footer-->
         <footer class="footer">
             <div class="container">
-                <div>&copy; 2018</div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer__logo"><img src="./images/footer-logo.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-ul">
+                                <li><a href="#!">О компании</a></li>
+                                <li><a href="#!">Продукция</a></li>
+                                <li><a href="#!">Места продажи</a></li>
+                                <li><a href="#!">Партнерам</a></li>
+                                <li><a href="#!">Разработчикам</a></li>
+                            </ul>
+                            <button class="footer__nav-btn" type="button">Меню</button>
+                        </nav>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer__copyright">© 2003-2019 «Masuma»</div>
+                        <div class="footer__info">При использовании материалов сайта обязательно указание прямой обратной ссылки на источник.</div>
+                    </div>
+                </div>
             </div>
         </footer>
         <div style="height: 1000px; background-color: #000"></div>
@@ -106,6 +252,7 @@
         <script src="./js/libs/jquery/jquery-migrate-3.0.1.min.js"></script>
         <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="./js/libs/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="./js/libs/slick/slick.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>

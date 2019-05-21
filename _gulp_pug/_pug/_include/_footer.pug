@@ -2,5 +2,20 @@
 footer.footer
   .container
     
-    div &copy; 2018
+    .row
+      .col-lg-3
+        .footer__logo
+          img(src="./images/footer-logo.png", alt="")
+      .col-lg-4
+        nav.footer__nav
+          ul.footer__nav-ul
+            li: a(href="#!") О компании
+            li: a(href="#!") Продукция
+            li: a(href="#!") Места продажи
+            li: a(href="#!") Партнерам
+            li: a(href="#!") Разработчикам
+          button(type="button").footer__nav-btn Меню
+      .col-lg-5
+        .footer__copyright © 2003-2019 «Masuma»
+        .footer__info При использовании материалов сайта обязательно указание прямой обратной ссылки на источник.
   

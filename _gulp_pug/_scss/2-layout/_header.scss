@@ -1,4 +1,396 @@
 /* header */
 .header {
-  background-color: $color-gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  &-holder {
+    height: 120px;
+  }
+  &__top {
+    background: #e9f1f6;
+    height: 40px;
+    &-wrapper {
+      margin: 0 -15px;
+      display: flex;
+      &>div {
+        flex-shrink: 0;
+        &+div {
+          padding-left: 30px;
+        }
+        &:nth-of-type(2) {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+  &__catalog {
+    position: relative;
+    &-btn {
+      color: $color-white;
+      background: $color-dark;
+      height: 40px;
+      border: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      width: 165px;
+      transition: background 0.35s;
+      &:hover {
+        background: #535353;
+      }
+      &.is-active {
+        background: $color-orange;
+      }
+      [class*="ion-"] {
+        font-size: 16px;
+        margin-right: 5px;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: -1px;
+      }
+    }
+    &-nav {
+      position: absolute;
+      width: 278px;
+      top: 40px;
+      left: 0;
+      background: #535353;
+      color: $color-white;
+      padding: 10px 0;
+      z-index: 15;
+      font-size: 16px;
+      box-shadow: 0 6px 35px rgba($color-black,.6);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(5px);
+      transition: opacity 0.35s, transform 0.35s;
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          list-style: none;
+          &>a,&>span {
+            display: block;
+            line-height: 1.3;
+            padding: 7px 10px 7px 26px;
+            color: $color-white;
+            text-decoration: none;
+          }
+          &.active {
+            &>a,&>span {
+              background: $color-orange;
+              color: $color-white;
+              text-decoration: none;
+            }
+          }
+          &>a {
+            &:hover {
+              text-decoration: none;
+              background: $color-orange;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__menu {
+    &-nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          margin: 0;
+          display: inline-block;
+          &>a,&>span {
+            display: block;
+            color: $primary-color-dark;
+            text-decoration: none;
+            height: 40px;
+            line-height: 40px;
+            font-weight: 500;
+          }
+          &+li {
+            margin-left: 13px;
+          }
+          &>a {
+            &:hover {
+              color: $color-orange;
+              text-decoration: underline;
+            }
+          }
+          &.active {
+            &>a,&>span {
+              color: $color-orange;
+            }
+          }
+        }
+      }
+    }
+    &-btn {
+      display: none;
+      border: 0;
+      height: 40px;
+      padding: 0;
+      background: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      color: $primary-color-dark;
+    }
+  }
+  &__enter {
+    position: relative;
+    margin-right: 10px;
+    &-btn {
+      border: 0;
+      height: 40px;
+      background: none;
+      color: $primary-color-dark;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0;
+      transition: color 0.35s;
+      svg {
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        vertical-align: -2px;
+        margin-right: 5px;
+        path {
+          fill: $primary-color-dark;
+          transition: fill 0.35s;
+        }
+      }
+      &:hover {
+        color: $color-orange;
+        path {
+          fill: $color-orange;
+        }
+      }
+      &.is-active {
+        color: $color-orange;
+        svg {
+          path {
+            fill: $color-orange;
+          }
+        }
+      }
+    }
+    &-modal {
+      position: absolute;
+      width: 262px;
+      top: 40px;
+      right: -40px;
+      background: $color-dark;
+      color: $color-white;
+      padding: 20px;
+      z-index: 15;
+      font-size: 16px;
+      box-shadow: 0 6px 35px rgba($color-black,.6);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(5px);
+      transition: opacity 0.35s, transform 0.35s;
+      .btn {
+        margin-bottom: 13px;
+        box-shadow: 0 6px 15px rgba($color-black,.38);
+      }
+      .form-control {
+        background: $primary-color;
+        border-color: $primary-color;
+        color: $color-white;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          color: $color-white;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+          color: $color-white;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+          color: $color-white;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+          color: $color-white;
+        }
+      }
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+      }
+    }
+    &-info {
+      margin: 25px -20px -20px -20px;
+      text-align: center;
+      background: $primary-color-dark;
+      color: $color-white;
+      font-weight: 500;
+      padding: 20px 25px;
+      font-size: 14px;
+      p {
+        color: $color-orange;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+      small {
+        display: block;
+        line-height: 1.2;
+      }
+    }
+  }
+  &__language {
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+    position: relative;
+    z-index: 15;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 0;
+        display: none;
+        &.active {
+          display: block;
+          &>a,&>span {
+            background: $primary-color;
+            color: $color-white;
+            cursor: pointer;
+          }
+        }
+        &>a,&>span {
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          text-transform: uppercase;
+          font-weight: 500;
+          text-decoration: none;
+          background: $color-white;
+          color: $primary-color;
+        }
+        &>a {
+          &:hover {
+            color: $color-white;
+            background: $primary-color;
+          }
+        }
+      }
+    }
+    &.is-active {
+      filter: drop-shadow(0 2px 10px rgba($primary-color,.2));
+      ul {
+        li {
+          display: block;
+          &.active {
+            &>span,&>a {
+              background: $color-orange;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    height: 80px;
+    background: $color-orange;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      &>div {
+        &:nth-child(2) {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+  &__logo {
+    position: relative;
+    height: 110px;
+    width: 278px;
+    background: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    .span {
+      color: $color-white;
+      position: absolute;
+      left: calc(100% + 28px);
+      font-size: 15px;
+      font-weight: 500;
+      white-space: nowrap;
+      top: 17px;
+      span {
+        line-height: 24px;
+        font-size: 17px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__address {
+    font-size: 17px;
+    color: $color-white;
+    font-weight: 500;
+    position: relative;
+    padding-left: 50px;
+    min-height: 38px;
+    top: 14px;
+    margin-left: 80px;
+    svg {
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      left: 0;
+      top: 6px;
+      path {
+        fill: #fac190;
+      }
+    }
+    small {
+      font-size: 14px;
+    }
+  }
+  &__phones {
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 16px;
+    float: right;
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+    &>div {
+      line-height: 1.2;
+      &+div {
+        margin-top: 8px;
+      }
+    }
+    svg {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      top: 8px;
+      path {
+        fill: #fac190;
+      }
+    } 
+  }
 }

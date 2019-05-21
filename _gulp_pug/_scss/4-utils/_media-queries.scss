@@ -4,12 +4,47 @@
 
 @media only screen and (max-width: 1599px) {}
 
-@media only screen and (max-width: 1439px) {}
+@media only screen and (max-width: 1439px) {
+  .main-slider {
+    &__block {
+      height: 330px;
+    }
+  }
+}
 
 @media only screen and (max-width: 1199px) {
   .about {
     &__row {
       margin-left: 0;
+    }
+  }
+  .main-map {
+    &__tab {
+      margin-right: 15px;
+    }
+  } 
+  .header {
+    position: relative;
+    &-holder {
+      display: none;
+    }
+    &__address {
+      margin-left: 40px;
+    }
+    &__logo {
+      width: 227px;
+      height: 90px;
+      img {
+        width: 196px;
+      }
+    }
+  }
+  .main-slider {
+    &__block {
+      height: 290px;
+    }
+    .slick-dots {
+      bottom: -20px;
     }
   }
 }
@@ -29,6 +64,182 @@
       &--3 {
         margin-bottom: 30px;
       }
+    }
+  }
+  .footer {
+    padding: 33px 0 20px 0;
+    &__logo {
+      display: none;
+    }
+    &__copyright {
+      text-align: center;
+      margin: 0 0 5px 0;
+    }
+    &__info {
+      margin: 0;
+      text-align: center;
+    }
+    .row {
+      &>div {
+        &::before {
+          display: none !important;
+        }
+      }
+    }
+    &__nav {
+      position: relative;
+      width: 143px;
+      margin: 0 auto 25px;
+      &-ul {
+        margin: 0 0 0 -138px;
+        position: absolute;
+        width: 278px;
+        background: $color-dark;
+        color: $color-white;
+        left: 50%;
+        bottom: 40px;
+        padding: 23px 0 10px 0;
+        column-count: 1;
+        z-index: 15;
+        box-shadow: 0 6px 35px rgba($color-black,.6);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        transition: all 0.35s;
+        &.is-active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+        &>li {
+          margin: 0;
+          &>a,&>span {
+            display: block;
+            line-height: 1.3;
+            padding: 9px 10px 9px 26px;
+            color: $color-white;
+            text-decoration: none;
+          }
+          &.active {
+            &>a,&>span {
+              background: $color-orange;
+              color: $color-white;
+              text-decoration: none;
+            }
+          }
+          &>a {
+            &:hover {
+              text-decoration: none;
+              background: $color-orange;
+              color: $color-white;
+            }
+          }
+        }
+      }
+      &-btn {
+        display: block;
+      }
+    }
+  }
+  .main-map {
+    &__tab {
+      width: 346px;
+      ul {
+        padding-left: 55px;
+      }
+    }
+    &__office {
+      padding-left: 30px;
+      padding-right: 20px;
+      font-size: 16px;
+      &-address {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      &-title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .header {
+    &__logo {
+      width: 203px;
+      height: 80px;
+      img {
+        width: 174px;
+      }
+      .span {
+        display: none;
+      }
+    }
+    &__menu {
+      display: inline-block;
+      position: relative;
+      &-btn {
+        display: block;
+        &.is-active {
+          color: $color-orange;
+        }
+      }
+      &-nav {
+        margin: 0;
+        position: absolute;
+        width: 278px;
+        background: $color-dark;
+        color: $color-white;
+        left: -30px;
+        top: 40px;
+        padding: 23px 0 10px 0;
+        column-count: 1;
+        z-index: 15;
+        box-shadow: 0 6px 35px rgba($color-black,.6);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        transition: all 0.35s;
+        &.is-active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+        ul {
+          &>li {
+            margin: 0 !important;
+            float: none;
+            display: block;
+            &>a,&>span {
+              display: block;
+              line-height: 1.3;
+              padding: 9px 10px 9px 26px;
+              color: $color-white;
+              text-decoration: none;
+              height: auto;
+            }
+            &.active {
+              &>a,&>span {
+                background: $color-orange;
+                color: $color-white;
+                text-decoration: none;
+              }
+            }
+            &>a {
+              &:hover {
+                text-decoration: none;
+                background: $color-orange;
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__address {
+      margin-left: 30px;
+    }
+  }
+  .main-slider {
+    &__block {
+      height: 220px;
     }
   }
 }
@@ -68,6 +279,22 @@
       display: none;
     }
   }
+  .footer {
+    padding-top: 40px;
+  }
+  .header {
+    &__address {
+      display: none;
+    }
+    &__phones {
+      margin-right: 45px;
+    }
+  }
+  .main-slider {
+    &__block {
+      height: 140px;
+    }
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -92,6 +319,62 @@
       &--4 {
         margin-bottom: 35px;
       }
+    }
+  }
+  .main-map {
+    &__tab {
+      width: 320px;
+      ul {
+        padding-left: 40px;
+      }
+    }
+    &__office {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+      p {
+        margin-bottom: 10px;
+      }
+      &-address {
+        font-size: 19px;
+      }
+    }
+  }
+  .header {
+    &__catalog {
+      &-btn {
+        font-size: 0;
+        width: 40px;
+        [class*="ion-"] {
+          font-size: 21px;
+          &::before {
+            content: "\f35c";
+          }
+        }
+      }
+    }
+    &__enter {
+      margin-right: -10px;
+    }
+    &__logo {
+      width: 145px;
+      img {
+        width: 116px;
+      }
+    }
+    &__phones {
+      padding-left: 0;
+      margin-left: 15px;
+      margin-right: 0;
+      svg {
+        display: none;
+      }
+    }
+  }
+  .main-slider {
+    &__block {
+      height: 110px;
+      background-position: calc(50% + 40px) top;
     }
   }
 }
