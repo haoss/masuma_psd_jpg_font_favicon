@@ -20,8 +20,10 @@ legend {
 }
 .btn {
   border-radius: 0;
-  padding: .44rem .75rem;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  &-lg {
+    font-size: 18px;
+  }
 }

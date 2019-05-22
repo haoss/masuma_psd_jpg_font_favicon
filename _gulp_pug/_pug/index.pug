@@ -22,10 +22,234 @@ html(lang="ru")
         div
           .main-slider__block(style="background-image: url('./tmp/main-slide-1.png');")
 
-    .section
+    // Search
+    .section.search
       .container
-        p 1
+
+        nav.search__tab
+          ul.nav(role="tablist")
+            li: a#search-tab-1.active(href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true") Поиск по артикулу
+            li: a#search-tab-2(href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false") ПОиск по машине
+            li: a#search-tab-3(href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false") Запрос по vin
+
+        .tab-content
+          .tab-pane.active#search-1(role='tabpanel' aria-labelledby='search-tab-1')
+
+            .search__form
+              div
+                .search__form-input
+                  input(type="text" placeholder="Введите ваш запрос, например ОАЕ 12345679").form-control
+              div
+                button(type="button").btn.btn-primary.btn-lg Найти
+
+          .tab-pane#search-2(role='tabpanel' aria-labelledby='search-tab-2') 2
+          .tab-pane#search-3(role='tabpanel' aria-labelledby='search-tab-3') 3
+
+    // Category
+    .section.category
+      .container
+
+        .row
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title автоэлектрика
+                img(src="./images/category-icon-1.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title Инструменты
+                img(src="./images/category-icon-2.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title Материалы для шиномонтажа
+                img(src="./images/category-icon-3.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title Дворники
+                img(src="./images/category-icon-4.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title Трансмиссия и ходовая часть
+                img(src="./images/category-icon-5.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title фильтры
+                img(src="./images/category-icon-6.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title топливная система
+                img(src="./images/category-icon-7.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title автомобильные крепления
+                img(src="./images/category-icon-8.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+          .col-md-4
+            .category__block
+              .category__block-wrapper
+                .category__block-title Двигатель и составляющие
+                img(src="./images/category-icon-9.svg", alt="").category__block-img
+                nav.category__block-list
+                  ul
+                    li: a(href="#!") Домкраты и упоры
+                    li: a(href="#!") Измерительный инструмент
+                    li: a(href="#!") Манометры
+                    li: a(href="#!") Компрессоры
+                    li: a(href="#!") Ручной инструмент
+                    li: a(href="#!") Ключи
+                    li: a(href="#!") Наборы
+                    li: a(href="#!") Отвертки
+
+    // News
+    .section.news
+      .container
+        
+        .row
+          .col-lg-3.col-md-12
+            .news__head Новости компании и отрасли, а так же акции наших партнеров
+            .news__filter
+              p отфильтровать вывод:
+              a(href="#!").a новости
+              a(href="#!").a.a--action Акция
+          .col-lg-3.col-md-6
+            .news__block
+              .news__block-label Новости
+              .news__block-thumb
+                img(src="./tmp/news/news-img-1.png", alt="")
+              .news__block-content
+                .news__block-title Хэтчбек Hyundai после рестайлинга стал мощнее и дальнобойнее 
+                p В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.
+              .news__block-info
+                div 
+                  i.ion-eye
+                  | 10
+                  span.span
+                  i.ion-thumbsup
+                  | 250  
+                div
+                  time 01.05.2019
+          .col-lg-3.col-md-6
+            .news__block
+              .news__block-label Новости
+              .news__block-thumb
+                img(src="./tmp/news/news-img-2.png", alt="")
+              .news__block-content
+                .news__block-title Превратившийся в кроссовер Kia Ceed: больше и выше, но только с передним приводом 
+                p В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.
+              .news__block-info
+                div
+                  i.ion-eye
+                  | 10
+                  span.span
+                  i.ion-thumbsup
+                  | 250
+                div
+                  time 01.05.2019
+          .col-lg-3.d-md-none.d-lg-block
+            .news__block.last
+              .news__block-label.news__block-label--action Акция
+              .news__block-thumb
+                img(src="./tmp/news/news-img-3.png", alt="")
+              .news__block-content
+                .news__block-title Original Meet: лучшие классические и кастомные автомобили и мотоциклы 
+                p В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.
+              .news__block-info
+                div
+                  i.ion-eye
+                  | 10
+                  span.span
+                  i.ion-thumbsup
+                  | 250
+                div
+                  time 01.05.2019
       
+    // About
     .section.about
       .container
 
@@ -109,4 +333,3 @@ html(lang="ru")
     // Load Scripts
     include ./_include/_footer-js
     script(src="./js/common.js")
-

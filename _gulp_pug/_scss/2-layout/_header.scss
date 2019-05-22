@@ -211,16 +211,16 @@
         background: $primary-color;
         border-color: $primary-color;
         color: $color-white;
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        &::-webkit-input-placeholder {
           color: $color-white;
         }
-        &::-moz-placeholder { /* Firefox 19+ */
+        &::-moz-placeholder {
           color: $color-white;
         }
-        &:-ms-input-placeholder { /* IE 10+ */
+        &:-ms-input-placeholder {
           color: $color-white;
         }
-        &:-moz-placeholder { /* Firefox 18- */
+        &:-moz-placeholder {
           color: $color-white;
         }
       }
