@@ -90,11 +90,11 @@ $(window).on('load', function() {
 $(window).on('scroll', function() { });
 $(window).on('resize', function() {
   var width = $(window).width();
-  var btn = $('.footer__nav-btn');
-  var menu = $('.footer__nav-ul');
+  var footerBtn = $('.footer__nav-btn');
+  var footerUl = $('.footer__nav-ul');
 
-  if (width >= 992 && btn.hasClass('is-active')) {
-    btn.add(menu).removeClass('is-active');
+  if (width >= 992 && footerBtn.hasClass('is-active')) {
+    footerBtn.add(footerUl).removeClass('is-active');
   }
 });
 
