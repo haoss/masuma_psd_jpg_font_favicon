@@ -65,12 +65,8 @@ $(document).on('ready', function(){
     pauseOnHover: false
   });
 
-  // footerNav();
   mainMapAddress();
-  // headerCatalog();
-  // headerEnter();
   headerLang();
-  // headerMenu();
   jNavigation();
 
   // Chrome Smooth Scroll
@@ -98,8 +94,7 @@ $(window).on('resize', function() {
   var menu = $('.footer__nav-ul');
 
   if (width >= 992 && btn.hasClass('is-active')) {
-    btn.removeClass('is-active');
-    menu.removeClass('is-active');
+    btn.add(menu).removeClass('is-active');
   }
 });
 
@@ -213,21 +208,15 @@ function jNavigation() {
     var block = _this.next('.j-btn-target');
     
     if (_this.hasClass('is-active')) {
-      _this.removeClass('is-active');
-      block.removeClass('is-active');
+      _this.add(block).removeClass('is-active');
     } else {
-      btn.removeClass('is-active');
-      btnTarget.removeClass('is-active');
-
-      _this.addClass('is-active');
-      block.addClass('is-active');
+      btn.add(btnTarget).removeClass('is-active');
+      _this.add(block).addClass('is-active');
     }
   });
 
   $(document).on('click', function(e){
     if (btn.hasClass('is-active')) {
-      console.log(e);
-      
       btn.add(btnTarget).removeClass('is-active');
     }
   });
