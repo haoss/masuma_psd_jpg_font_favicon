@@ -65,12 +65,13 @@ $(document).on('ready', function(){
     pauseOnHover: false
   });
 
-  footerNav();
+  // footerNav();
   mainMapAddress();
-  headerCatalog();
-  headerEnter();
+  // headerCatalog();
+  // headerEnter();
   headerLang();
-  headerMenu();
+  // headerMenu();
+  jNavigation();
 
   // Chrome Smooth Scroll
   try {
@@ -164,118 +165,6 @@ function simpleForm(form, callback) {
   });
 }
 
-function footerNav() {
-  var btn = $('.footer__nav-btn');
-  var menu = $('.footer__nav-ul');
-
-  btn.on('click', function(e){
-    e.stopPropagation();
-    var _this = $(this);
-    if (_this.hasClass('is-active')) {
-      _this.removeClass('is-active');
-      menu.removeClass('is-active');
-    } else {
-      _this.addClass('is-active');
-      menu.addClass('is-active');
-    }
-  });
-
-  menu.on('click', function(e){
-    e.stopPropagation();
-  });
-
-  $(document).on('click', function(){
-    if (btn.hasClass('is-active')) {
-      btn.removeClass('is-active');
-      menu.removeClass('is-active');
-    }
-  });
-}
-
-function headerCatalog() {
-  var btn = $('.header__catalog-btn');
-  var menu = $('.header__catalog-nav');
-
-  btn.on('click', function(e){
-    var _this = $(this);
-    e.stopPropagation();
-    if (_this.hasClass('is-active')) {
-      _this.removeClass('is-active');
-      menu.removeClass('is-active');
-    } else {
-      _this.addClass('is-active');
-      menu.addClass('is-active');
-    }
-  });
-
-  menu.on('click', function(e){
-    e.stopPropagation();
-  });
-
-  $(document).on('click', function(){
-    if (btn.hasClass('is-active')) {
-      btn.removeClass('is-active');
-      menu.removeClass('is-active');
-    }
-  });
-}
-
-function headerEnter() {
-  var btn = $('.header__enter-btn');
-  var menu = $('.header__enter-modal');
-
-  btn.on('click', function(e){
-    e.stopPropagation();
-    var _this = $(this);
-    if (_this.hasClass('is-active')) {
-      _this.removeClass('is-active');
-      menu.removeClass('is-active');
-    } else {
-      _this.addClass('is-active');
-      menu.addClass('is-active');
-    }
-  });
-
-  menu.on('click', function(e){
-    e.stopPropagation();
-  });
-
-  $(document).on('click', function(){
-    if (btn.hasClass('is-active')) {
-      btn.removeClass('is-active');
-      menu.removeClass('is-active');
-    }
-  });
-}
-
-function headerMenu() {
-  var btn = $('.header__menu-btn');
-  var menu = $('.header__menu-nav');
-
-  btn.on('click', function(e){
-    var _this = $(this);
-    e.stopPropagation();
-    if (_this.hasClass('is-active')) {
-      _this.removeClass('is-active');
-      menu.removeClass('is-active');
-    } else {
-      _this.addClass('is-active');
-      menu.addClass('is-active');
-    }
-  });
-
-  menu.on('click', function(e){
-    e.stopPropagation();
-  });
-
-  $(document).on('click', function(){
-    if (btn.hasClass('is-active')) {
-      btn.removeClass('is-active');
-      menu.removeClass('is-active');
-    }
-  });
-}
-
 function mainMapAddress() {
   var tab1 = $('#map1-tab');
   var tab2 = $('#map2-tab');
@@ -296,23 +185,50 @@ function headerLang() {
   var lang = $('.header__language');
 
   link.on('click', function(e){
-    e.stopPropagation();
     var _this = $(this);
     var block = _this.parents('.header__language');
     if (block.hasClass('is-active')) {
       block.removeClass('is-active');
     } else {
-      block.addClass('is-active');
+      setTimeout(function(){
+        block.addClass('is-active');
+      });
     }
-  });
-
-  lang.on('click', function(e){
-    e.stopPropagation();
   });
 
   $(document).on('click', function(){
     if (lang.hasClass('is-active')) {
       lang.removeClass('is-active');
+    }
+  });
+}
+
+function jNavigation() {
+  var btn = $('.j-btn-target');
+  var btnTarget = $('.j-btn');
+
+  $(document).on('click', '.j-btn', function(e){
+    e.stopPropagation();
+    var _this = $(this);
+    var block = _this.next('.j-btn-target');
+    
+    if (_this.hasClass('is-active')) {
+      _this.removeClass('is-active');
+      block.removeClass('is-active');
+    } else {
+      btn.removeClass('is-active');
+      btnTarget.removeClass('is-active');
+
+      _this.addClass('is-active');
+      block.addClass('is-active');
+    }
+  });
+
+  $(document).on('click', function(e){
+    if (btn.hasClass('is-active')) {
+      console.log(e);
+      
+      btn.add(btnTarget).removeClass('is-active');
     }
   });
 }
