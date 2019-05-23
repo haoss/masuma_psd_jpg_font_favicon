@@ -68,6 +68,7 @@ $(document).on('ready', function(){
   mainMapAddress();
   headerLang();
   jNavigation();
+  searchTab();
 
   // Chrome Smooth Scroll
   try {
@@ -220,4 +221,19 @@ function jNavigation() {
       btn.add(btnTarget).removeClass('is-active');
     }
   });
+}
+
+function searchTab() {
+  var block = $('.search__tab');
+  var ul = block.find('.nav');
+  var link = ul.find('a');
+
+  link.on('click', function(e){
+    if ($(e.target).hasClass('active')) {
+      e.preventDefault();
+      ul.addClass('is-active');
+    } else {
+      ul.removeClass('is-active');
+    }
+  })
 }

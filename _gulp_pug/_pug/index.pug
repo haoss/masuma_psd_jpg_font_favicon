@@ -28,12 +28,12 @@ html(lang="ru")
 
         nav.search__tab
           ul.nav(role="tablist")
-            li: a#search-tab-1.active(href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true") Поиск по артикулу
+            li: a#search-tab-1(href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true") Поиск по артикулу
             li: a#search-tab-2(href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false") ПОиск по машине
-            li: a#search-tab-3(href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false") Запрос по vin
+            li: a#search-tab-3.active(href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false") Запрос по vin
 
         .tab-content
-          .tab-pane.active#search-1(role='tabpanel' aria-labelledby='search-tab-1')
+          .tab-pane#search-1(role='tabpanel' aria-labelledby='search-tab-1')
 
             .search__form
               div
@@ -43,7 +43,49 @@ html(lang="ru")
                 button(type="button").btn.btn-primary.btn-lg Найти
 
           .tab-pane#search-2(role='tabpanel' aria-labelledby='search-tab-2') 2
-          .tab-pane#search-3(role='tabpanel' aria-labelledby='search-tab-3') 3
+          .tab-pane.active#search-3(role='tabpanel' aria-labelledby='search-tab-3')
+
+            .search__vin
+              .row
+                .col-lg-4
+                  .form-group
+                    label(for='vinName').d-none Ваше имя
+                    input.form-control#vinName(type='text' aria-describedby='vinName' placeholder='Ваше имя')
+                .col-lg-4
+                  .form-group
+                    label(for='vinPhone').d-none Ваш телефон
+                    input.form-control#vinPhone(type='text' aria-describedby='vinPhone' placeholder='Ваш телефон')
+                .col-lg-4
+                  .form-group
+                    label(for='vinEmail').d-none Ваш e-mail
+                    input.form-control#vinEmail(type='text' aria-describedby='vinEmail' placeholder='Ваш e-mail')
+              .row
+                .col-lg-4
+                  .form-group
+                    label(for='vinMark').d-none Марка
+                    input.form-control#vinMark(type='text' aria-describedby='vinMark' placeholder='Марка')
+                .col-lg-4
+                  .form-group
+                    label(for='vinModel').d-none Модель
+                    input.form-control#vinModel(type='text' aria-describedby='vinModel' placeholder='Модель')
+                .col-lg-4
+                  .form-group
+                    label(for='vinYear').d-none Год
+                    input.form-control#vinYear(type='text' aria-describedby='vinYear' placeholder='Год')
+              .row
+                .col-lg-8
+                  p Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.
+                .col-lg-4
+                  .form-group
+                    label(for='vinVin').d-none Vin
+                    input.form-control#vinVin(type='text' aria-describedby='vinVin' placeholder='ASDJH987F44469TTD')
+              .row
+                .col-lg-12
+                  .form-group
+                    label(for='vinMessage').d-none Текст запроса
+                    textarea.form-control#vinMessage(rows="5" aria-describedby='vinMessage' placeholder='Текст запроса')
+
+              button.btn.btn-primary(type="submit") отправить запрос
 
     // Category
     .section.category
