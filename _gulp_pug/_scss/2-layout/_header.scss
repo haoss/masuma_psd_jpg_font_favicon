@@ -208,21 +208,9 @@
         box-shadow: 0 6px 15px rgba($color-black,.38);
       }
       .form-control {
-        background: $primary-color;
-        border-color: $primary-color;
-        color: $color-white;
-        &::-webkit-input-placeholder {
-          color: $color-white;
-        }
-        &::-moz-placeholder {
-          color: $color-white;
-        }
-        &:-ms-input-placeholder {
-          color: $color-white;
-        }
-        &:-moz-placeholder {
-          color: $color-white;
-        }
+        padding-left: 10px;
+        background: $primary-color !important;
+        border-color: $primary-color !important;
       }
       &.is-active {
         opacity: 1;

@@ -5,7 +5,30 @@ button {
     outline: none;
   }
 }
-.btn-primary {
-  color: $color-white;
-  box-shadow: 0 6px 20px rgba($color-orange,.8);
+.btn {
+  border-radius: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  &-lg {
+    font-size: 18px;
+  }
+  &-primary {
+    color: $color-white;
+    box-shadow: 0 6px 20px rgba($color-orange,.8);
+  }
+  &--search-vin {
+    width: 100%;
+    max-width: 380px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  &--search-auto {
+    width: 100%;
+    max-width: 262px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }

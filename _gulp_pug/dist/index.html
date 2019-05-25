@@ -141,13 +141,13 @@
             <div class="container">
                 <nav class="search__tab">
                     <ul class="nav" role="tablist">
-                        <li><a id="search-tab-1" href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true">Поиск по артикулу</a></li>
+                        <li><a class="active" id="search-tab-1" href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true">Поиск по артикулу</a></li>
                         <li><a id="search-tab-2" href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false">ПОиск по машине</a></li>
-                        <li><a class="active" id="search-tab-3" href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false">Запрос по vin</a></li>
+                        <li><a id="search-tab-3" href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false">Запрос по vin</a></li>
                     </ul>
                 </nav>
                 <div class="tab-content">
-                    <div class="tab-pane" id="search-1" role="tabpanel" aria-labelledby="search-tab-1">
+                    <div class="tab-pane active" id="search-1" role="tabpanel" aria-labelledby="search-tab-1">
                         <div class="search__form">
                             <div>
                                 <div class="search__form-input">
@@ -159,23 +159,172 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">2</div>
-                    <div class="tab-pane active" id="search-3" role="tabpanel" aria-labelledby="search-tab-3">
+                    <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">
+                        <div class="search__auto">
+                            <form action="#!">
+                                <label class="form-label">тип автомобиля:</label>
+                                <div class="row flex-sm-nowrap">
+                                    <div class="col-auto">
+                                        <div class="form-group">
+                                            <label class="form-radio form-radio--vin" for="radio1">
+                                                <input class="form-radio-input" id="radio1" type="radio" name="radio" checked><span class="form-radio-icon"></span><span class="form-radio-label">Легковые автомобили</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-group">
+                                            <label class="form-radio form-radio--vin" for="radio2">
+                                                <input class="form-radio-input" id="radio2" type="radio" name="radio"><span class="form-radio-icon"></span><span class="form-radio-label">Грузовики и автобусы</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear10"></div>
+                                <div class="search__auto-row">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="form-group">
+                                                <label class="form-label form-label--pl15px">Рынок:</label>
+                                                <div class="select-custom">
+                                                    <select name="select1" size="10">
+                                                        <option value="Европа">Европа </option>
+                                                        <option value="Корея">Корея </option>
+                                                        <option value="США">США </option>
+                                                        <option value="Япония Левый руль">Япония Левый руль </option>
+                                                        <option value="Япония Правый руль">Япония Правый руль </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-group">
+                                                <label class="form-label form-label--pl15px">Марка:</label>
+                                                <div class="select-custom">
+                                                    <select name="select1" size="10">
+                                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="CHEVROLET">CHEVROLET</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                        <option value="CITROEN">CITROEN</option>
+                                                        <option value="FIAT">FIAT</option>
+                                                        <option value="FORD">FORD</option>
+                                                        <option value="OPEL">OPEL</option>
+                                                        <option value="PEUGEOT">PEUGEOT</option>
+                                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                                        <option value="AUDI">AUDI</option>
+                                                        <option value="BMW">BMW</option>
+                                                        <option value="CHEVROLET">CHEVROLET</option>
+                                                        <option value="CHRYSLER">CHRYSLER</option>
+                                                        <option value="CITROEN">CITROEN</option>
+                                                        <option value="FIAT">FIAT</option>
+                                                        <option value="FORD">FORD</option>
+                                                        <option value="OPEL">OPEL</option>
+                                                        <option value="PEUGEOT">PEUGEOT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-group">
+                                                <label class="form-label form-label--pl15px">Модель:</label>
+                                                <div class="select-custom">
+                                                    <select name="select1" size="10">
+                                                        <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
+                                                        <option value="AVEO (T250)">AVEO (T250)</option>
+                                                        <option value="AVEO (T300)">AVEO (T300)</option>
+                                                        <option value="CAPTIVA">CAPTIVA</option>
+                                                        <option value="COBALT">COBALT</option>
+                                                        <option value="CRUZE">CRUZE</option>
+                                                        <option value="KALOS">KALOS</option>
+                                                        <option value="LACETTI">LACETTI</option>
+                                                        <option value="NUBIRA">NUBIRA</option>
+                                                        <option value="OPTRAS">OPTRAS</option>
+                                                        <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
+                                                        <option value="AVEO (T250)">AVEO (T250)</option>
+                                                        <option value="AVEO (T300)">AVEO (T300)</option>
+                                                        <option value="CAPTIVA">CAPTIVA</option>
+                                                        <option value="COBALT">COBALT</option>
+                                                        <option value="CRUZE">CRUZE</option>
+                                                        <option value="KALOS">KALOS</option>
+                                                        <option value="LACETTI">LACETTI</option>
+                                                        <option value="NUBIRA">NUBIRA</option>
+                                                        <option value="OPTRAS">OPTRAS</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-group">
+                                                <label class="form-label form-label--pl15px">Год выпуска:</label>
+                                                <div class="select-custom">
+                                                    <select name="select1" size="10">
+                                                        <option value="Не знаю">Не знаю</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2002">2002</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="form-group">
+                                                <label class="form-label form-label--pl15px">Кузов</label>
+                                                <div class="select-custom">
+                                                    <select name="select1" size="10">
+                                                        <option value="">Не знаю</option>
+                                                        <option value="">Европа </option>
+                                                        <option value="">2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO</option>
+                                                        <option value="">2200cc. SUV. 5D. ДИЗЕЛЬ TURBO</option>
+                                                        <option value="">2400cc. SUV. 5D. БЕНЗИН MPI.</option>
+                                                        <option value="">3000cc. SUV. 5D. БЕНЗИН MPI. VVT</option>
+                                                        <option value="">3200cc. SUV. 5D. БЕНЗИН MPI.</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear15"></div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary btn--search-auto" type="submit">Подобрать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="search-3" role="tabpanel" aria-labelledby="search-tab-3">
                         <div class="search__vin">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinName">Ваше имя</label>
                                         <input class="form-control" id="vinName" type="text" aria-describedby="vinName" placeholder="Ваше имя">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinPhone">Ваш телефон</label>
                                         <input class="form-control" id="vinPhone" type="text" aria-describedby="vinPhone" placeholder="Ваш телефон">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinEmail">Ваш e-mail</label>
                                         <input class="form-control" id="vinEmail" type="text" aria-describedby="vinEmail" placeholder="Ваш e-mail">
@@ -183,19 +332,19 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinMark">Марка</label>
                                         <input class="form-control" id="vinMark" type="text" aria-describedby="vinMark" placeholder="Марка">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinModel">Модель</label>
                                         <input class="form-control" id="vinModel" type="text" aria-describedby="vinModel" placeholder="Модель">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label class="d-none" for="vinYear">Год</label>
                                         <input class="form-control" id="vinYear" type="text" aria-describedby="vinYear" placeholder="Год">
@@ -203,25 +352,32 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8">
-                                    <p>Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.</p>
-                                </div>
-                                <div class="col-lg-4">
+                                <div class="col-md-4 order-md-2">
                                     <div class="form-group">
                                         <label class="d-none" for="vinVin">Vin</label>
                                         <input class="form-control" id="vinVin" type="text" aria-describedby="vinVin" placeholder="ASDJH987F44469TTD">
                                     </div>
                                 </div>
+                                <div class="col-md-8 order-md-1">
+                                    <div class="search__vin-info">Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.</div>
+                                </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="d-none" for="vinMessage">Текст запроса</label>
-                                        <textarea class="form-control" id="vinMessage" rows="5" aria-describedby="vinMessage" placeholder="Текст запроса"></textarea>
+                                        <textarea class="form-control" id="vinMessage" rows="4" aria-describedby="vinMessage" placeholder="Текст запроса"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-primary" type="submit">отправить запрос</button>
+                            <div class="clear15"></div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn--search-vin" type="submit">отправить запрос</button>
+                                <div class="clear"></div>
+                                <label class="form-check form-check--vin" for="defaultCheck1">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" checked><span class="form-check-icon"></span><span class="form-check-label"><a href="#!" target="_blank">С политикой конфиденциальности ознакомлен(а)</a></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -537,11 +693,20 @@
                 </div>
             </div>
             <div class="tab-content tab-content--main-map">
-                <div class="tab-pane active" id="map1" role="tabpanel" aria-labelledby="map1-tab">
-                    <div class="map__wrapper"><img src="./tmp/main-map-bottom-1.png" alt=""></div>
+                <div class="tab-pane" id="map1" role="tabpanel" aria-labelledby="map1-tab">
+                    <div class="map__wrapper"><img class="map__wrapper-logo" src="./images/map-logo.png" alt=""><img src="./tmp/main-map-bottom-1.png" alt=""></div>
                 </div>
-                <div class="tab-pane" id="map2" role="tabpanel" aria-labelledby="map2-tab">
-                    <div class="map__wrapper"><img src="./tmp/main-map-bottom-1.png" alt=""></div>
+                <div class="tab-pane active" id="map2" role="tabpanel" aria-labelledby="map2-tab">
+                    <div class="map__wrapper">
+                        <div class="map__wrapper-marker"><img src="./images/map-icon.png" alt="">
+                            <div class="map__wrapper-modal">
+                                <div class="map__wrapper-modal-title">ooo “евроавтоконсалтинг”</div>
+                                <div class="map__wrapper-modal-address">г.Киев, ул. Петра Горошенка, 12/1</div>
+                                <p><a href="tel:">+380 98 765 43 21</a><br><a href="tel:">+380 66 765 43 21</a></p>
+                                <p><a href="mailto:">www.euro1autoco.pro</a></p>
+                            </div>
+                        </div><img src="./tmp/main-map-bottom-1.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

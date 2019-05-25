@@ -73,6 +73,25 @@
         width: 213px;
       }
     }
+    &__vin {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+    &__auto {
+      &-row {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: -23px;
+        margin-right: -23px;
+        .col-auto {
+          padding-left: 8px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  .select-custom {
+    width: 184px;
   }
 }
 
@@ -323,6 +342,23 @@
         width: 158px;
       }
     }
+    &__vin {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+    &__auto {
+      &-row {
+        margin: 0;
+        padding: 0;
+        .col-auto {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .select-custom {
+    width: 220px;
   }
 }
 
@@ -505,6 +541,29 @@
         }
       }
     }
+    &__vin {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__auto {
+      max-width: 450px;
+      margin: 0 auto;
+      &-row {
+        max-width: 350px;
+        margin: 0 auto;
+        .col-auto {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .btn {
+    &--search-vin {
+      max-width: 400px;
+    }
+  }
+  .select-custom {
+    width: 100%;
   }
 }
 
@@ -619,6 +678,23 @@
         padding-right: 50px;
       }
     }
+  }
+  .search {
+    &__vin {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .btn {
+    &--search-vin {
+      max-width: inherit;
+      width: 100%;
+    }
+  }
+  .form-check--vin {
+    text-align: left !important;
+    display: block;
+    margin-top: 2px;
   }
 }
 

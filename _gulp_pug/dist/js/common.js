@@ -200,8 +200,8 @@ function headerLang() {
 }
 
 function jNavigation() {
-  var btn = $('.j-btn-target');
-  var btnTarget = $('.j-btn');
+  var btnTarget = $('.j-btn-target');
+  var btn = $('.j-btn');
 
   $(document).on('click', '.j-btn', function(e){
     e.stopPropagation();
@@ -219,6 +219,13 @@ function jNavigation() {
   $(document).on('click', function(e){
     if (btn.hasClass('is-active')) {
       btn.add(btnTarget).removeClass('is-active');
+    }
+  });
+
+  $(document).on('click', '.j-btn-target', function(e){
+    var _this = $(this);
+    if (_this.hasClass('is-active')) {
+      e.stopPropagation();
     }
   });
 }
