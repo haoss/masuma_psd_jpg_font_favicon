@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Главная - Masuma</title>
+        <title>Контакты - Masuma</title>
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -125,19 +125,17 @@
             </div>
         </header>
         <div class="header-holder"></div>
-        <!-- Slider-->
-        <div class="main-slider">
-            <div class="main-slider__init">
-                <div>
-                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-2.png');"></div>
-                </div>
-                <div>
-                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-1.png');"></div>
-                </div>
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#!">MASUMA</a></li>
+                    <li><a href="#!">Название категории</a></li>
+                    <li><span>Название подкатегории</span></li>
+                </ul>
             </div>
         </div>
         <!-- Search-->
-        <div class="section search">
+        <div class="section search search--inside">
             <div class="container">
                 <nav class="search__tab">
                     <ul class="nav" role="tablist">
@@ -160,7 +158,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">
-                        <div class="search__auto">
+                        <div class="search__auto no--p-bottom">
                             <form action="#!">
                                 <label class="form-label">тип автомобиля:</label>
                                 <div class="row flex-sm-nowrap">
@@ -383,242 +381,128 @@
                 </div>
             </div>
         </div>
-        <!-- Category-->
-        <div class="section category">
+        <!-- Map contact-->
+        <div class="section map-contact">
+            <div class="container">
+                <div class="main-map__tab main-map__tab--inside">
+                    <div class="main-map__office main-map__office--inside">
+                        <div class="main-map__office-title">Штаб-квартира MASUMA по оптовой продаже:</div>
+                        <div class="main-map__office-address">г.Киев, ул. Марко Вовчок, 12/14</div>
+                        <p>+380 98 765 43 21<br>+380 66 765 43 21  <span style="color: #777777; font-size: 14px;">(Telegram & Viber)</span></p>
+                        <p><a href="#!">info@site_name.pro</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map__wrapper"><img class="map__wrapper-logo" src="./images/map-logo.png" alt=""><img src="./tmp/main-map-bottom-1.png" alt=""></div>
+        </div>
+        <!-- Buy-->
+        <div class="section buy">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автоэлектрика</div><img class="category__block-img" src="./images/category-icon-1.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                        <div class="buy__info">
+                            <div class="buy__info-title">Где купить ритейл</div>
+                            <p>Вы можете купить продукты Masuma торговой марки у наших региональных дилеров (оптовые поставки), в партнерских магазинах (розничные продажи) или в фирменных магазинах Masuma (розничные продажи).</p>
+                            <div class="buy__info-info">В выбранном регионе <br><span class="span">2 магазина </span>и <span class="span">1 СТО</span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group form-group--buy">
+                            <label class="form-label form-label--big">Выберите регион:</label>
+                            <div class="select-custom select-custom--buy">
+                                <select name="select6" size="8">
+                                    <option value="">Закарпатская область</option>
+                                    <option value="">Запорожская область</option>
+                                    <option value="">Кировоград область</option>
+                                    <option value="">Киевская область</option>
+                                    <option value="">Крым</option>
+                                    <option value="">Луганская область</option>
+                                    <option value="">Львовская область</option>
+                                    <option value="">Мыколавская область</option>
+                                    <option value="">Запорожская область</option>
+                                    <option value="">Кировоград область</option>
+                                    <option value="">Киевская область</option>
+                                    <option value="">Крым</option>
+                                    <option value="">Луганская область</option>
+                                    <option value="">Львовская область</option>
+                                    <option value="">Мыколавская область</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Инструменты</div><img class="category__block-img" src="./images/category-icon-2.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                        <div class="form-group form-group--buy">
+                            <label class="form-label form-label--big">Выберите город:</label>
+                            <div class="select-custom select-custom--buy">
+                                <select name="select7" size="8">
+                                    <option value="">Ирпень</option>
+                                    <option value="">Вышгород</option>
+                                    <option value="">Бровары</option>
+                                    <option value="">Киев</option>
+                                    <option value="">Обухов</option>
+                                    <option value="">Вишневое</option>
+                                    <option value="">Борисполь</option>
+                                    <option value="">Буча</option>
+                                    <option value="">Вышгород</option>
+                                    <option value="">Бровары</option>
+                                    <option value="">Киев</option>
+                                    <option value="">Обухов</option>
+                                    <option value="">Вишневое</option>
+                                    <option value="">Борисполь</option>
+                                    <option value="">Буча</option>
+                                </select>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Материалы для шиномонтажа</div><img class="category__block-img" src="./images/category-icon-3.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                </div>
+                <div class="buy__result">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="buy__block">
+                                <div class="buy__block-label">МАГАЗИН</div>
+                                <div class="buy__block-title">Япония авто</div>
+                                <p><i class="ion-ios-location"></i>Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70</p>
+                                <p> <i class="ion-earth"></i><a href="#!">www.masuma.kiev.ua</a></p>
+                                <p><i class="ion-android-call"></i><a href="tel:">+ 380958653229 Николай</a></p>
+                                <p><i class="ion-android-drafts"></i><a href="mailto:">japan-auto_bumer@ukr.net</a></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Дворники</div><img class="category__block-img" src="./images/category-icon-4.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="buy__block">
+                                <div class="buy__block-label">сто</div>
+                                <div class="buy__block-title">Япония авто</div>
+                                <p><i class="ion-ios-location"></i>Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70</p>
+                                <p> <i class="ion-earth"></i><a href="#!">www.masuma.kiev.ua</a></p>
+                                <p><i class="ion-android-call"></i><a href="tel:">+ 380958653229 Николай</a></p>
+                                <p><i class="ion-android-drafts"></i><a href="mailto:">japan-auto_bumer@ukr.net</a></p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Трансмиссия и ходовая часть</div><img class="category__block-img" src="./images/category-icon-5.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">фильтры</div><img class="category__block-img" src="./images/category-icon-6.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">топливная система</div><img class="category__block-img" src="./images/category-icon-7.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автомобильные крепления</div><img class="category__block-img" src="./images/category-icon-8.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Двигатель и составляющие</div><img class="category__block-img" src="./images/category-icon-9.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="buy__block">
+                                <div class="buy__block-label">МАГАЗИН</div>
+                                <div class="buy__block-title">Япония авто</div>
+                                <p><i class="ion-ios-location"></i>Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70</p>
+                                <p> <i class="ion-earth"></i><a href="#!">www.masuma.kiev.ua</a></p>
+                                <p><i class="ion-android-call"></i><a href="tel:">+ 380958653229 Николай</a></p>
+                                <p><i class="ion-android-drafts"></i><a href="mailto:">japan-auto_bumer@ukr.net</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- News-->
-        <div class="section news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                        <div class="news__head">Новости компании и отрасли, а так же акции наших партнеров</div>
-                        <div class="news__filter">
-                            <p>отфильтровать вывод:</p><a class="a" href="#!">новости</a><a class="a a--action" href="#!">Акция</a>
+        <!-- Map-->
+        <div class="section main-map main-map--contact">
+            <div class="container no--p">
+                <div class="map__wrapper">
+                    <div class="map__wrapper-marker"><img src="./images/map-icon.png" alt="">
+                        <div class="map__wrapper-modal is-active">
+                            <div class="map__wrapper-modal-title">ooo “евроавтоконсалтинг”</div>
+                            <div class="map__wrapper-modal-address">г.Киев, ул. Петра Горошенка, 12/1</div>
+                            <p><a href="tel:">+380 98 765 43 21</a><br><a href="tel:">+380 66 765 43 21</a></p>
+                            <p><a href="mailto:">www.euro1autoco.pro</a></p>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-1.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Хэтчбек Hyundai после рестайлинга стал мощнее и дальнобойнее </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div> <i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250  </div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-2.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Превратившийся в кроссовер Kia Ceed: больше и выше, но только с передним приводом </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 d-md-none d-lg-block">
-                        <div class="news__block last">
-                            <div class="news__block-label news__block-label--action">Акция</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-3.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Original Meet: лучшие классические и кастомные автомобили и мотоциклы </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div><img src="./tmp/main-map-bottom-1.png" alt="">
                 </div>
             </div>
         </div>
@@ -628,8 +512,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="section__head">
-                            <div class="h1 nowrap-md">о компании </div>
-                            <div class="small nowrap-md">// Японское качество по доступной цене!</div>
+                            <div class="h1 nowrap-md">Задать вопрос</div>
+                            <div class="small nowrap-md">// Вопрос можете задать через форму справа.</div>
                         </div>
                         <div class="about__row">
                             <div class="row">
@@ -669,44 +553,34 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="about__info">
-                            <p>Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производителях запчастей. Сейчас это уже 45 групп товара и около 8000 наименований. </p>
-                            <p>Ежегодно вводится до 500 новых позиций и 2-3 новые группы. В этом году список товаров пополнился тормозными дисками и ступенчатыми узлами. <a href="#!">Подробнее</a></p>
+                        <div class="about__info about__info--form">
+                            <form class="form" action="#!">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label class="d-none" for="questionName">Ваше имя</label>
+                                                <input class="form-control" id="questionName" type="text" placeholder="Ваше имя">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <label class="d-none" for="questionEmail">E mail</label>
+                                                <input class="form-control" id="questionEmail" type="text" placeholder="E mail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-none" for="questionMessage">Ваш вопрос</label>
+                                        <textarea class="form-control" id="questionMessage" rows="4" aria-describedby="vinMessage" placeholder="Ваш вопрос"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary btn-block" type="submit">Отправить</button>
+                                    <label class="form-check form-check--small nowrap-md" for="defaultCheck2">
+                                        <input class="form-check-input" id="defaultCheck2" type="checkbox" checked><span class="form-check-icon"></span><span class="form-check-label"><a href="#!" target="_blank">С политикой конфиденциальности ознакомлен(а)</a></span>
+                                    </label>
+                                </fieldset>
+                            </form>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Map-->
-        <div class="section main-map">
-            <div class="container">
-                <div class="main-map__tab">
-                    <ul class="nav" role="tablist">
-                        <li><a class="active" id="map1-tab" data-toggle="tab" href="#map1" role="tab" aria-controls="map1" aria-selected="true"> <span> <i class="ion-ios-toggle"></i>Главный офис </span></a></li>
-                        <li><a id="map2-tab" data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false"> <span>Магазины</span></a></li>
-                    </ul>
-                    <div class="main-map__office j-map-tab is-active">
-                        <div class="main-map__office-title">Связаться с нами:</div>
-                        <div class="main-map__office-address">г.Киев, ул. Марко Вовчок, 12/14</div>
-                        <p>+380 98 765 43 21<br>+380 66 765 43 21  <span style="color: #777777; font-size: 14px;">(Telegram & Viber)</span></p>
-                        <p><a href="#!">info@site_name.pro</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-content tab-content--main-map">
-                <div class="tab-pane active" id="map1" role="tabpanel" aria-labelledby="map1-tab">
-                    <div class="map__wrapper"><img class="map__wrapper-logo" src="./images/map-logo.png" alt=""><img src="./tmp/main-map-bottom-1.png" alt=""></div>
-                </div>
-                <div class="tab-pane" id="map2" role="tabpanel" aria-labelledby="map2-tab">
-                    <div class="map__wrapper">
-                        <div class="map__wrapper-marker"><img src="./images/map-icon.png" alt="">
-                            <div class="map__wrapper-modal">
-                                <div class="map__wrapper-modal-title">ooo “евроавтоконсалтинг”</div>
-                                <div class="map__wrapper-modal-address">г.Киев, ул. Петра Горошенка, 12/1</div>
-                                <p><a href="tel:">+380 98 765 43 21</a><br><a href="tel:">+380 66 765 43 21</a></p>
-                                <p><a href="mailto:">www.euro1autoco.pro</a></p>
-                            </div>
-                        </div><img src="./tmp/main-map-bottom-1.png" alt="">
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Главная - Masuma</title>
+        <title>Категория - Masuma</title>
         <meta name="description" content="">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -125,19 +125,17 @@
             </div>
         </header>
         <div class="header-holder"></div>
-        <!-- Slider-->
-        <div class="main-slider">
-            <div class="main-slider__init">
-                <div>
-                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-2.png');"></div>
-                </div>
-                <div>
-                    <div class="main-slider__block" style="background-image: url('./tmp/main-slide-1.png');"></div>
-                </div>
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#!">MASUMA</a></li>
+                    <li><a href="#!">Название категории</a></li>
+                    <li><span>Название подкатегории</span></li>
+                </ul>
             </div>
         </div>
         <!-- Search-->
-        <div class="section search">
+        <div class="section search search--inside">
             <div class="container">
                 <nav class="search__tab">
                     <ul class="nav" role="tablist">
@@ -160,7 +158,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">
-                        <div class="search__auto">
+                        <div class="search__auto no--p-bottom">
                             <form action="#!">
                                 <label class="form-label">тип автомобиля:</label>
                                 <div class="row flex-sm-nowrap">
@@ -386,327 +384,135 @@
         <!-- Category-->
         <div class="section category">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автоэлектрика</div><img class="category__block-img" src="./images/category-icon-1.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                <div class="category__about">
+                    <div>
+                        <div class="category__about-name d-md-none">комплекты сцепления</div><img class="category__about-img" src="./tmp/category-img.png" alt="">
+                    </div>
+                    <div>
+                        <div class="category__about-name d-none d-md-block">комплекты сцепления</div>
+                        <div class="category__about-content">
+                            <div class="category__about-h2">Расчетный ресурс комплектов сцепления Finwhaile:</div>
+                            <ul>
+                                <li>не менее 100 000 км. пробега</li>
+                                <li>жаростойкость более 900 оС</li>
+                                <li>качество согласно стандарта ISO 9999</li>
+                            </ul>
+                        </div>
+                        <div class="category__advantages">
+                            <div>
+                                <div class="category__advantages-block"><img src="./images/category-advantage-1.svg" alt="">
+                                    <div>Уверенный и надежный старт</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="category__advantages-block"><img src="./images/category-advantage-2.svg" alt="">
+                                    <div>Износостойкие фрикционные материалы</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="category__advantages-block"><img src="./images/category-advantage-3.svg" alt="">
+                                    <div>Комфортное управление</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Инструменты</div><img class="category__block-img" src="./images/category-icon-2.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Материалы для шиномонтажа</div><img class="category__block-img" src="./images/category-icon-3.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Дворники</div><img class="category__block-img" src="./images/category-icon-4.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Трансмиссия и ходовая часть</div><img class="category__block-img" src="./images/category-icon-5.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">фильтры</div><img class="category__block-img" src="./images/category-icon-6.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">топливная система</div><img class="category__block-img" src="./images/category-icon-7.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автомобильные крепления</div><img class="category__block-img" src="./images/category-icon-8.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Двигатель и составляющие</div><img class="category__block-img" src="./images/category-icon-9.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                </div>
+                <ul class="category__list">
+                    <li class="active"><a href="#!"> <img src="./tmp/category-list-1.png" alt=""><span>Диски сцепления</span></a></li>
+                    <li><a href="#!"> <img src="./tmp/category-list-2.png" alt=""><span>Комплекты сцепления</span></a></li>
+                </ul>
+                <div class="category__table">
+                    <div class="category__table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>фото</th>
+                                    <th align="left">производитель (артикул)</th>
+                                    <th align="left">название</th>
+                                    <th align="right">инфо</th>
+                                    <th align="center">срок</th>
+                                    <th align="right">наличие</th>
+                                    <th>склад</th>
+                                    <th align="right">цена</th>
+                                    <th align="right">доставка</th>
+                                    <th> </th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="./tmp/category-list-1.png" width="36" alt=""></td>
+                                    <td align="left">
+                                        <div class="category__table-auto">Toyota <span>(13565434313)</span></div>
+                                    </td>
+                                    <td align="left"><a class="category__table-title" href="#!">Диск сцепления</a></td>
+                                    <td align="right">Новый</td>
+                                    <td align="center">
+                                        <div class="category__table-term">8/9</div>
+                                    </td>
+                                    <td align="right">10</td>
+                                    <td align="center"><img src="./tmp/flag-1.png" alt=""></td>
+                                    <td align="right">333.10 грн</td>
+                                    <td align="right">36.55 грн</td>
+                                    <td align="center">
+                                        <input class="category__table-number" type="text" value="12">
+                                    </td>
+                                    <td align="center"><a class="category__table-cart" href="#!"><img src="./images/icon-cart.svg" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./tmp/category-list-1.png" width="36" alt=""></td>
+                                    <td align="left">
+                                        <div class="category__table-auto">Toyota <span>(13565434313)</span></div>
+                                    </td>
+                                    <td align="left"><a class="category__table-title" href="#!">Диск сцепления</a></td>
+                                    <td align="right">Не очень новый</td>
+                                    <td align="center">
+                                        <div class="category__table-term">3/4</div>
+                                    </td>
+                                    <td align="right">10</td>
+                                    <td align="center"><img src="./tmp/flag-2.png" alt=""></td>
+                                    <td align="right">993.10 грн</td>
+                                    <td align="right">36.55 грн</td>
+                                    <td align="center">
+                                        <input class="category__table-number" type="text" value="12">
+                                    </td>
+                                    <td align="center"><a class="category__table-cart" href="#!"><img src="./images/icon-cart.svg" width="20" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./tmp/category-list-1.png" width="36" alt=""></td>
+                                    <td align="left">
+                                        <div class="category__table-auto">Toyota <span>(13565434313)</span></div>
+                                    </td>
+                                    <td align="left"><a class="category__table-title" href="#!">Диск сцепления</a></td>
+                                    <td align="right">Новый</td>
+                                    <td align="center">
+                                        <div class="category__table-term">8/9</div>
+                                    </td>
+                                    <td align="right">10</td>
+                                    <td align="center"><img src="./tmp/flag-2.png" alt=""></td>
+                                    <td align="right">100.10 грн</td>
+                                    <td align="right">36.55 грн</td>
+                                    <td align="center">
+                                        <input class="category__table-number" type="text" value="12">
+                                    </td>
+                                    <td align="center"><a class="category__table-cart" href="#!"><img src="./images/icon-cart.svg" width="20" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- News-->
-        <div class="section news">
+        <!-- Section-->
+        <div class="section seo">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                        <div class="news__head">Новости компании и отрасли, а так же акции наших партнеров</div>
-                        <div class="news__filter">
-                            <p>отфильтровать вывод:</p><a class="a" href="#!">новости</a><a class="a a--action" href="#!">Акция</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-1.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Хэтчбек Hyundai после рестайлинга стал мощнее и дальнобойнее </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div> <i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250  </div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-2.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Превратившийся в кроссовер Kia Ceed: больше и выше, но только с передним приводом </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 d-md-none d-lg-block">
-                        <div class="news__block last">
-                            <div class="news__block-label news__block-label--action">Акция</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-3.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Original Meet: лучшие классические и кастомные автомобили и мотоциклы </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About-->
-        <div class="section about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="section__head">
-                            <div class="h1 nowrap-md">о компании </div>
-                            <div class="small nowrap-md">// Японское качество по доступной цене!</div>
-                        </div>
-                        <div class="about__row">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                                    <div class="about__block about__block--1">
-                                        <div><img src="./images/img-about-1.svg" alt=""></div>
-                                        <div>
-                                            <p>Мы ответим на все ваши вопросы о продукции </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                                    <div class="about__block about__block--2">
-                                        <div><img src="./images/img-about-2.svg" alt=""></div>
-                                        <div>
-                                            <p>Поможем в формировании заказа </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                                    <div class="about__block about__block--3">
-                                        <div><img src="./images/img-about-3.svg" alt=""></div>
-                                        <div>
-                                            <p>Вы сможете работать с дистрибьютерами напрямую</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-6 col-12">
-                                    <div class="about__block about__block--4">
-                                        <div><img src="./images/img-about-4.svg" alt=""></div>
-                                        <div>
-                                            <p>Организуем поставку от ближайшего дистрибьютера</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about__info">
-                            <p>Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производителях запчастей. Сейчас это уже 45 групп товара и около 8000 наименований. </p>
-                            <p>Ежегодно вводится до 500 новых позиций и 2-3 новые группы. В этом году список товаров пополнился тормозными дисками и ступенчатыми узлами. <a href="#!">Подробнее</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Map-->
-        <div class="section main-map">
-            <div class="container">
-                <div class="main-map__tab">
-                    <ul class="nav" role="tablist">
-                        <li><a class="active" id="map1-tab" data-toggle="tab" href="#map1" role="tab" aria-controls="map1" aria-selected="true"> <span> <i class="ion-ios-toggle"></i>Главный офис </span></a></li>
-                        <li><a id="map2-tab" data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false"> <span>Магазины</span></a></li>
-                    </ul>
-                    <div class="main-map__office j-map-tab is-active">
-                        <div class="main-map__office-title">Связаться с нами:</div>
-                        <div class="main-map__office-address">г.Киев, ул. Марко Вовчок, 12/14</div>
-                        <p>+380 98 765 43 21<br>+380 66 765 43 21  <span style="color: #777777; font-size: 14px;">(Telegram & Viber)</span></p>
-                        <p><a href="#!">info@site_name.pro</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-content tab-content--main-map">
-                <div class="tab-pane active" id="map1" role="tabpanel" aria-labelledby="map1-tab">
-                    <div class="map__wrapper"><img class="map__wrapper-logo" src="./images/map-logo.png" alt=""><img src="./tmp/main-map-bottom-1.png" alt=""></div>
-                </div>
-                <div class="tab-pane" id="map2" role="tabpanel" aria-labelledby="map2-tab">
-                    <div class="map__wrapper">
-                        <div class="map__wrapper-marker"><img src="./images/map-icon.png" alt="">
-                            <div class="map__wrapper-modal">
-                                <div class="map__wrapper-modal-title">ooo “евроавтоконсалтинг”</div>
-                                <div class="map__wrapper-modal-address">г.Киев, ул. Петра Горошенка, 12/1</div>
-                                <p><a href="tel:">+380 98 765 43 21</a><br><a href="tel:">+380 66 765 43 21</a></p>
-                                <p><a href="mailto:">www.euro1autoco.pro</a></p>
-                            </div>
-                        </div><img src="./tmp/main-map-bottom-1.png" alt="">
+                <div class="seo__document">
+                    <div class="seo__title">О комплектах сцепления</div>
+                    <div class="seo__wrapper">
+                        <p>Японская торгово-производственная компания MASUMA була основана в 2001 г.., В городе Токио. Идея пролегал в том, чтобы объединить и выпускать основные инструменты и запчасти под Единственным товарным знаком и сделать их доступной по цене альтернативой дорогим оригинальным запчасти. Именно вырабатывать, а не просто упаковывать в свою коробку.</p>
+                        <p>Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производитель запчастей. Сейчас Это уже 45 групп товара и около 8000 наименований. Ежегодно вводиться до 500 Новых позиц и 2-3 Новые группы. В этом году список товаров пополнился гальмивними дисками и ступинчатими Узлы.</p>
+                        <p>Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производитель запчастей. Сейчас Это уже 45 групп товара и около 8000 наименований. Ежегодно вводиться до 500 Новых позиц и 2-3 Новые группы. В этом году список товаров пополнился гальмивними дисками и ступинчатими Узлы.</p>
+                        <p>Японская торгово-производственная компания MASUMA була основана в 2001 г.., В городе Токио. Идея пролегал в том, чтобы объединить и выпускать основные инструменты и запчасти под Единственным товарным знаком и сделать их доступной по цене альтернативой дорогим оригинальным запчасти. Именно вырабатывать, а не просто упаковывать в свою коробку.</p>
                     </div>
                 </div>
             </div>

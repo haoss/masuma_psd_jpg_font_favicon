@@ -69,6 +69,7 @@ $(document).on('ready', function(){
   headerLang();
   jNavigation();
   searchTab();
+  mapMarkerTest();
 
   // Chrome Smooth Scroll
   try {
@@ -164,7 +165,7 @@ function simpleForm(form, callback) {
 function mainMapAddress() {
   var tab1 = $('#map1-tab');
   var tab2 = $('#map2-tab');
-  var block = $('.main-map__office');
+  var block = $('.j-map-tab');
 
   block.addClass('is-active')
 
@@ -243,4 +244,23 @@ function searchTab() {
       ul.removeClass('is-active');
     }
   })
+}
+
+function mapMarkerTest() {
+  var marker = $('.map__wrapper-marker');
+
+  marker.each(function(){
+    var _this = $(this);
+    var modal = _this.find('.map__wrapper-modal');
+    _this.on('click', function(){
+      if (modal.hasClass('is-active')) {
+        modal.removeClass('is-active')
+      } else {
+        modal.addClass('is-active')
+      }
+    });
+    modal.on('click', function(e){
+      e.stopPropagation();
+    });
+  });
 }

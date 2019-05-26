@@ -36,7 +36,7 @@ legend {
 }
 .form-check {
   font-weight: 500;
-  &--vin {
+  &--small {
     display: inline-block;
     margin-bottom: 0;
     padding-left: 27px;
@@ -119,8 +119,6 @@ textarea.form-control {
   min-height: 98px;
 }
 
-
-
 .form-label {
   font-size: 14px;
   font-weight: bold;
@@ -130,6 +128,11 @@ textarea.form-control {
   color: #232323;
   &--pl15px {
     padding-left: 15px;
+  }
+  &--big {
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 10px;
   }
 }
 
@@ -176,5 +179,8 @@ textarea.form-control {
         color: $color-white;
       }
     }
+  }
+  &--buy {
+    width: 100% !important;
   }
 }

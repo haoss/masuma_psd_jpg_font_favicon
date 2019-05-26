@@ -78,7 +78,7 @@ html(lang="ru")
                       .form-group
                         label.form-label.form-label--pl15px Марка:
                         .select-custom
-                          select(name="select1" size="10")
+                          select(name="select2" size="10")
                             option(value="ALFA ROMEO") ALFA ROMEO
                             option(value="AUDI") AUDI
                             option(value="BMW") BMW
@@ -103,7 +103,7 @@ html(lang="ru")
                       .form-group
                         label.form-label.form-label--pl15px Модель:
                         .select-custom
-                          select(name="select1" size="10")
+                          select(name="select3" size="10")
                             option(value="ASTROAVEO (T200)") ASTROAVEO (T200)
                             option(value="AVEO (T250)") AVEO (T250)
                             option(value="AVEO (T300)") AVEO (T300)
@@ -128,7 +128,7 @@ html(lang="ru")
                       .form-group
                         label.form-label.form-label--pl15px Год выпуска:
                         .select-custom
-                          select(name="select1" size="10")
+                          select(name="select4" size="10")
                             option(value="Не знаю") Не знаю
                             option(value="1993") 1993
                             option(value="1994") 1994
@@ -154,7 +154,7 @@ html(lang="ru")
                       .form-group
                         label.form-label.form-label--pl15px Кузов
                         .select-custom
-                          select(name="select1" size="10")
+                          select(name="select5" size="10")
                             option(value="") Не знаю
                             option(value="") Европа 
                             option(value="") 2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO
@@ -210,11 +210,11 @@ html(lang="ru")
 
               .clear15
               .text-center
-                button.btn.btn-primary.btn--search-vin(type="submit") отправить запрос
+                button.btn.btn-primary.btn--search-big(type="submit") отправить запрос
                 
                 .clear
 
-                label.form-check.form-check--vin(for='defaultCheck1')
+                label.form-check.form-check--small(for='defaultCheck1')
                   input.form-check-input#defaultCheck1(type='checkbox' checked)
                   span.form-check-icon
                   span.form-check-label
@@ -467,6 +467,7 @@ html(lang="ru")
               p Ежегодно вводится до 500 новых позиций и 2-3 новые группы. В этом году список товаров пополнился тормозными дисками и ступенчатыми узлами. 
                 a(href="#!") Подробнее
 
+    // Map
     .section.main-map
       .container
 
@@ -481,7 +482,7 @@ html(lang="ru")
               a#map2-tab(data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false") 
                 span Магазины
 
-          .main-map__office.is-active
+          .main-map__office.j-map-tab.is-active
             .main-map__office-title Связаться с нами:
             .main-map__office-address г.Киев, ул. Марко Вовчок, 12/14
             p +380 98 765 43 21
@@ -492,13 +493,13 @@ html(lang="ru")
               a(href="#!") info@site_name.pro
       
       .tab-content.tab-content--main-map
-        #map1.tab-pane(role='tabpanel' aria-labelledby='map1-tab')
+        #map1.tab-pane.active(role='tabpanel' aria-labelledby='map1-tab')
 
           .map__wrapper
             img(src="./images/map-logo.png", alt="").map__wrapper-logo
-            img(src="./tmp/main-map-bottom-1.png", alt="")
+            img(src="./tmp/main-map-bottom-1.png", alt="")  
 
-        #map2.tab-pane.active(role='tabpanel' aria-labelledby='map2-tab')
+        #map2.tab-pane(role='tabpanel' aria-labelledby='map2-tab')
           
           .map__wrapper
             .map__wrapper-marker
@@ -515,7 +516,7 @@ html(lang="ru")
             img(src="./tmp/main-map-bottom-1.png", alt="")
 
     include ./_include/_footer
-    div(style="height: 1000px; background-color: #000")
+    //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js

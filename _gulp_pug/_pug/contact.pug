@@ -1,0 +1,429 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Контакты' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Контакты' + ' - Masuma' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    include ./_include/_header
+
+    .container
+      .breadcrumbs
+        ul
+          li: a(href="#!") MASUMA
+          li: a(href="#!") Название категории
+          li: span Название подкатегории
+
+    // Search
+    .section.search.search--inside
+      .container
+
+        nav.search__tab
+          ul.nav(role="tablist")
+            li: a#search-tab-1.active(href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true") Поиск по артикулу
+            li: a#search-tab-2(href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false") ПОиск по машине
+            li: a#search-tab-3(href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false") Запрос по vin
+
+        .tab-content
+          .tab-pane.active#search-1(role='tabpanel' aria-labelledby='search-tab-1')
+            .search__form
+              div
+                .search__form-input
+                  input(type="text" placeholder="Введите ваш запрос, например ОАЕ 12345679").form-control
+              div
+                button(type="button").btn.btn-primary.btn-lg Найти
+
+          .tab-pane#search-2(role='tabpanel' aria-labelledby='search-tab-2')
+            .search__auto.no--p-bottom
+              form(action="#!")
+                label.form-label тип автомобиля:
+
+                .row.flex-sm-nowrap
+                  .col-auto
+                    .form-group
+                      label.form-radio.form-radio--vin(for='radio1')
+                        input.form-radio-input#radio1(type='radio' name="radio" checked)
+                        span.form-radio-icon
+                        span.form-radio-label Легковые автомобили
+                  .col-auto
+                    .form-group
+                      label.form-radio.form-radio--vin(for='radio2')
+                        input.form-radio-input#radio2(type='radio' name="radio")
+                        span.form-radio-icon
+                        span.form-radio-label Грузовики и автобусы
+
+                .clear10
+                
+                .search__auto-row
+                  .row
+                    .col-auto
+                      .form-group
+                        label.form-label.form-label--pl15px Рынок:
+                        .select-custom
+                          select(name="select1" size="10")
+                            option(value="Европа") Европа 
+                            option(value="Корея") Корея 
+                            option(value="США") США 
+                            option(value="Япония Левый руль") Япония Левый руль 
+                            option(value="Япония Правый руль") Япония Правый руль 
+                    .col-auto
+                      .form-group
+                        label.form-label.form-label--pl15px Марка:
+                        .select-custom
+                          select(name="select2" size="10")
+                            option(value="ALFA ROMEO") ALFA ROMEO
+                            option(value="AUDI") AUDI
+                            option(value="BMW") BMW
+                            option(value="CHEVROLET") CHEVROLET
+                            option(value="CHRYSLER") CHRYSLER
+                            option(value="CITROEN") CITROEN
+                            option(value="FIAT") FIAT
+                            option(value="FORD") FORD
+                            option(value="OPEL") OPEL
+                            option(value="PEUGEOT") PEUGEOT
+                            option(value="ALFA ROMEO") ALFA ROMEO
+                            option(value="AUDI") AUDI
+                            option(value="BMW") BMW
+                            option(value="CHEVROLET") CHEVROLET
+                            option(value="CHRYSLER") CHRYSLER
+                            option(value="CITROEN") CITROEN
+                            option(value="FIAT") FIAT
+                            option(value="FORD") FORD
+                            option(value="OPEL") OPEL
+                            option(value="PEUGEOT") PEUGEOT
+                    .col-auto
+                      .form-group
+                        label.form-label.form-label--pl15px Модель:
+                        .select-custom
+                          select(name="select3" size="10")
+                            option(value="ASTROAVEO (T200)") ASTROAVEO (T200)
+                            option(value="AVEO (T250)") AVEO (T250)
+                            option(value="AVEO (T300)") AVEO (T300)
+                            option(value="CAPTIVA") CAPTIVA
+                            option(value="COBALT") COBALT
+                            option(value="CRUZE") CRUZE
+                            option(value="KALOS") KALOS
+                            option(value="LACETTI") LACETTI
+                            option(value="NUBIRA") NUBIRA
+                            option(value="OPTRAS") OPTRAS
+                            option(value="ASTROAVEO (T200)") ASTROAVEO (T200)
+                            option(value="AVEO (T250)") AVEO (T250)
+                            option(value="AVEO (T300)") AVEO (T300)
+                            option(value="CAPTIVA") CAPTIVA
+                            option(value="COBALT") COBALT
+                            option(value="CRUZE") CRUZE
+                            option(value="KALOS") KALOS
+                            option(value="LACETTI") LACETTI
+                            option(value="NUBIRA") NUBIRA
+                            option(value="OPTRAS") OPTRAS
+                    .col-auto
+                      .form-group
+                        label.form-label.form-label--pl15px Год выпуска:
+                        .select-custom
+                          select(name="select4" size="10")
+                            option(value="Не знаю") Не знаю
+                            option(value="1993") 1993
+                            option(value="1994") 1994
+                            option(value="1995") 1995
+                            option(value="1996") 1996
+                            option(value="1997") 1997
+                            option(value="1998") 1998
+                            option(value="1999") 1999
+                            option(value="2000") 2000
+                            option(value="2001") 2001
+                            option(value="2002") 2002
+                            option(value="1993") 1993
+                            option(value="1994") 1994
+                            option(value="1995") 1995
+                            option(value="1996") 1996
+                            option(value="1997") 1997
+                            option(value="1998") 1998
+                            option(value="1999") 1999
+                            option(value="2000") 2000
+                            option(value="2001") 2001
+                            option(value="2002") 2002
+                    .col-auto
+                      .form-group
+                        label.form-label.form-label--pl15px Кузов
+                        .select-custom
+                          select(name="select5" size="10")
+                            option(value="") Не знаю
+                            option(value="") Европа 
+                            option(value="") 2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO
+                            option(value="") 2200cc. SUV. 5D. ДИЗЕЛЬ TURBO
+                            option(value="") 2400cc. SUV. 5D. БЕНЗИН MPI.
+                            option(value="") 3000cc. SUV. 5D. БЕНЗИН MPI. VVT
+                            option(value="") 3200cc. SUV. 5D. БЕНЗИН MPI.
+                
+                .clear15
+                .text-center
+                  button.btn.btn-primary.btn--search-auto(type="submit") Подобрать
+
+          .tab-pane#search-3(role='tabpanel' aria-labelledby='search-tab-3')
+            .search__vin
+              .row
+                .col-md-4
+                  .form-group
+                    label(for='vinName').d-none Ваше имя
+                    input.form-control#vinName(type='text' aria-describedby='vinName' placeholder='Ваше имя')
+                .col-md-4
+                  .form-group
+                    label(for='vinPhone').d-none Ваш телефон
+                    input.form-control#vinPhone(type='text' aria-describedby='vinPhone' placeholder='Ваш телефон')
+                .col-md-4
+                  .form-group
+                    label(for='vinEmail').d-none Ваш e-mail
+                    input.form-control#vinEmail(type='text' aria-describedby='vinEmail' placeholder='Ваш e-mail')
+              .row
+                .col-md-4
+                  .form-group
+                    label(for='vinMark').d-none Марка
+                    input.form-control#vinMark(type='text' aria-describedby='vinMark' placeholder='Марка')
+                .col-md-4
+                  .form-group
+                    label(for='vinModel').d-none Модель
+                    input.form-control#vinModel(type='text' aria-describedby='vinModel' placeholder='Модель')
+                .col-md-4
+                  .form-group
+                    label(for='vinYear').d-none Год
+                    input.form-control#vinYear(type='text' aria-describedby='vinYear' placeholder='Год')
+              .row
+                .col-md-4.order-md-2
+                  .form-group
+                    label(for='vinVin').d-none Vin
+                    input.form-control#vinVin(type='text' aria-describedby='vinVin' placeholder='ASDJH987F44469TTD')
+                .col-md-8.order-md-1
+                  .search__vin-info Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.
+              .row
+                .col-md-12
+                  .form-group
+                    label(for='vinMessage').d-none Текст запроса
+                    textarea.form-control#vinMessage(rows="4" aria-describedby='vinMessage' placeholder='Текст запроса')
+
+              .clear15
+              .text-center
+                button.btn.btn-primary.btn--search-big(type="submit") отправить запрос
+                
+                .clear
+
+                label.form-check.form-check--small(for='defaultCheck1')
+                  input.form-check-input#defaultCheck1(type='checkbox' checked)
+                  span.form-check-icon
+                  span.form-check-label
+                    a(href="#!" target="_blank") С политикой конфиденциальности ознакомлен(а)
+
+    // Map contact
+    .section.map-contact
+      .container
+        .main-map__tab.main-map__tab--inside
+          .main-map__office.main-map__office--inside
+            .main-map__office-title Штаб-квартира MASUMA по оптовой продаже:
+            .main-map__office-address г.Киев, ул. Марко Вовчок, 12/14
+            p +380 98 765 43 21
+              br
+              | +380 66 765 43 21  
+              span(style="color: #777777; font-size: 14px;") (Telegram & Viber)
+            p
+              a(href="#!") info@site_name.pro
+      .map__wrapper
+        img(src="./images/map-logo.png", alt="").map__wrapper-logo
+        img(src="./tmp/main-map-bottom-1.png", alt="")
+    
+    // Buy
+    .section.buy
+      .container
+        
+        .row
+          .col-md-4
+            .buy__info
+              .buy__info-title Где купить ритейл
+              p Вы можете купить продукты Masuma торговой марки у наших региональных дилеров (оптовые поставки), в партнерских магазинах (розничные продажи) или в фирменных магазинах Masuma (розничные продажи).
+              .buy__info-info В выбранном регионе 
+                br
+                span.span 2 магазина 
+                | и 
+                span.span 1 СТО
+          .col-md-4
+            .form-group.form-group--buy
+              label.form-label.form-label--big Выберите регион:
+              .select-custom.select-custom--buy
+                select(name="select6" size="8")
+                  option(value="") Закарпатская область
+                  option(value="") Запорожская область
+                  option(value="") Кировоград область
+                  option(value="") Киевская область
+                  option(value="") Крым
+                  option(value="") Луганская область
+                  option(value="") Львовская область
+                  option(value="") Мыколавская область
+                  option(value="") Запорожская область
+                  option(value="") Кировоград область
+                  option(value="") Киевская область
+                  option(value="") Крым
+                  option(value="") Луганская область
+                  option(value="") Львовская область
+                  option(value="") Мыколавская область
+          .col-md-4
+            .form-group.form-group--buy
+              label.form-label.form-label--big Выберите город:
+              .select-custom.select-custom--buy
+                select(name="select7" size="8")
+                  option(value="") Ирпень
+                  option(value="") Вышгород
+                  option(value="") Бровары
+                  option(value="") Киев
+                  option(value="") Обухов
+                  option(value="") Вишневое
+                  option(value="") Борисполь
+                  option(value="") Буча
+                  option(value="") Вышгород
+                  option(value="") Бровары
+                  option(value="") Киев
+                  option(value="") Обухов
+                  option(value="") Вишневое
+                  option(value="") Борисполь
+                  option(value="") Буча
+
+        .buy__result
+          .row
+            .col-lg-4.col-md-6
+              .buy__block
+                .buy__block-label МАГАЗИН
+                .buy__block-title Япония авто
+                p
+                  i.ion-ios-location
+                  | Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70
+                p 
+                  i.ion-earth
+                  a(href="#!") www.masuma.kiev.ua
+                p
+                  i.ion-android-call
+                  a(href="tel:") + 380958653229 Николай
+                p
+                  i.ion-android-drafts
+                  a(href="mailto:") japan-auto_bumer@ukr.net
+            .col-lg-4.col-md-6
+              .buy__block
+                .buy__block-label сто
+                .buy__block-title Япония авто
+                p
+                  i.ion-ios-location
+                  | Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70
+                p 
+                  i.ion-earth
+                  a(href="#!") www.masuma.kiev.ua
+                p
+                  i.ion-android-call
+                  a(href="tel:") + 380958653229 Николай
+                p
+                  i.ion-android-drafts
+                  a(href="mailto:") japan-auto_bumer@ukr.net
+            .col-lg-4.col-md-6
+              .buy__block
+                .buy__block-label МАГАЗИН
+                .buy__block-title Япония авто
+                p
+                  i.ion-ios-location
+                  | Киев, ринг Дороха ул. Садова, 70 Киев, ринг Дороха ул. Садова, 70
+                p 
+                  i.ion-earth
+                  a(href="#!") www.masuma.kiev.ua
+                p
+                  i.ion-android-call
+                  a(href="tel:") + 380958653229 Николай
+                p
+                  i.ion-android-drafts
+                  a(href="mailto:") japan-auto_bumer@ukr.net
+
+    // Map
+    .section.main-map.main-map--contact
+      .container.no--p
+
+        .map__wrapper
+          .map__wrapper-marker
+            img(src="./images/map-icon.png", alt="")
+            .map__wrapper-modal.is-active
+              .map__wrapper-modal-title ooo “евроавтоконсалтинг”
+              .map__wrapper-modal-address г.Киев, ул. Петра Горошенка, 12/1
+              p
+                a(href="tel:") +380 98 765 43 21
+                br
+                a(href="tel:") +380 66 765 43 21
+              p
+                a(href="mailto:") www.euro1autoco.pro
+          img(src="./tmp/main-map-bottom-1.png", alt="")
+
+    // About
+    .section.about
+      .container
+
+        .row
+          .col-md-6
+            .section__head
+              .h1.nowrap-md Задать вопрос
+              .small.nowrap-md // Вопрос можете задать через форму справа.
+
+            .about__row
+              .row
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--1
+                    div
+                      img(src="./images/img-about-1.svg", alt="")
+                    div
+                      p Мы ответим на все ваши вопросы о продукции 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--2
+                    div
+                      img(src="./images/img-about-2.svg", alt="")
+                    div
+                      p Поможем в формировании заказа 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--3
+                    div
+                      img(src="./images/img-about-3.svg", alt="")
+                    div
+                      p Вы сможете работать с дистрибьютерами напрямую
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--4
+                    div
+                      img(src="./images/img-about-4.svg", alt="")
+                    div
+                      p Организуем поставку от ближайшего дистрибьютера
+
+          .col-md-6
+            .about__info.about__info--form
+              form(action="#!").form
+                fieldset
+                  .row
+                    .col-lg-6.col-sm-6
+                      .form-group
+                        label(for="questionName").d-none Ваше имя
+                        input.form-control#questionName(type='text' placeholder='Ваше имя')
+                    .col-lg-6.col-sm-6
+                      .form-group
+                        label(for="questionEmail").d-none E mail
+                        input.form-control#questionEmail(type='text' placeholder='E mail')
+                  .form-group
+                    label(for='questionMessage').d-none Ваш вопрос
+                    textarea.form-control#questionMessage(rows="4" aria-describedby='vinMessage' placeholder='Ваш вопрос')
+                  button.btn.btn-primary.btn-block(type='submit') Отправить
+
+                  label.form-check.form-check--small(for='defaultCheck2').nowrap-md
+                    input.form-check-input#defaultCheck2(type='checkbox' checked)
+                    span.form-check-icon
+                    span.form-check-label
+                      a(href="#!" target="_blank") С политикой конфиденциальности ознакомлен(а)
+
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
