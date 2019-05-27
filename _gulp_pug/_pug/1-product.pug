@@ -1,0 +1,295 @@
+doctype
+
+html(lang="ru")
+
+  -var active = '1 товар' //активный пункт меню, список в header.jade
+  -var pageTitle = '1 товар' + ' - Masuma' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    include ./_include/_header
+
+    // Content
+    .content.content--inside
+      .container
+        +breadcrumbs
+
+        .search
+          +searchBody
+
+        .one-product
+
+          .one-product__table
+            .one-product__table-header Деталь подходит для автомобилей
+            .category__table.category__table--auto
+              .category__table-wrapper
+                table
+                  thead
+                    tr
+                      th(align="center") TOYOTA
+                      th &nbsp;
+                      th(align="center") год выпуска 
+                      th(align="right") тип двигателя
+                      th(align="right") мощность 
+                      th(align="right") обьём двигателя
+                  tbody
+                    tr
+                      td(align="left" colspan="2")
+                        .category__table-auto 5465432 
+                          span (4WD)
+                      td(align="center") 1997 - 2000
+                      td(align="right") Бензин
+                      td(align="right") 117 kW, 155 Hp
+                      td(align="right") 2464 cc
+                    tr
+                      td(align="left" colspan="2")
+                        .category__table-auto 2345234 
+                          span (4WD)
+                      td(align="center") 2010 - 2200
+                      td(align="right") Дизель
+                      td(align="right") 999 kW, 155 Hp
+                      td(align="right") 8464 cc
+                    tr
+                      td(align="left" colspan="2")
+                        .category__table-auto 4234555 
+                          span (4WD)
+                      td(align="center") 1900 - 3000
+                      td(align="right") Антиматерия
+                      td(align="right") 2345 kW, 155 Hp
+                      td(align="right") 20464 cc
+                    tr.d-none
+                      td(align="left" colspan="2")
+                        .category__table-auto 5465432 
+                          span (4WD)
+                      td(align="center") 1997 - 2000
+                      td(align="right") Бензин
+                      td(align="right") 117 kW, 155 Hp
+                      td(align="right") 2464 cc
+                    tr.d-none
+                      td(align="left" colspan="2")
+                        .category__table-auto 2345234 
+                          span (4WD)
+                      td(align="center") 2010 - 2200
+                      td(align="right") Дизель
+                      td(align="right") 999 kW, 155 Hp
+                      td(align="right") 8464 cc
+                    tr.d-none
+                      td(align="left" colspan="2")
+                        .category__table-auto 4234555 
+                          span (4WD)
+                      td(align="center") 1900 - 3000
+                      td(align="right") Антиматерия
+                      td(align="right") 2345 kW, 155 Hp
+                      td(align="right") 20464 cc
+            a(href="#!").one-product__table-more Развернуть весь список
+
+          .category__table
+            .category__table-wrapper
+              table
+                thead
+                  tr
+                    th фото
+                    th(align="left") производитель (артикул)
+                    th(align="left") название
+                    th(align="right") инфо
+                    th(align="center") срок
+                    th(align="right") наличие
+                    th склад
+                    th(align="right") цена
+                    th(align="right") доставка
+                    th 
+                    th 
+                tbody
+                  tr
+                    td
+                      img(src="./tmp/category-list-1.png", width="36" alt="")
+                    td(align="left")
+                      .category__table-auto Toyota 
+                        span (13565434313)
+                    td(align="left")
+                      a(href="#!").category__table-title Диск сцепления
+                    td(align="right") Новый
+                    td(align="center")
+                      .category__table-term 8/9
+                    td(align="right") 10
+                    td(align="center")
+                      img(src="./tmp/flag-1.png", alt="")
+                    td(align="right") 333.10 грн
+                    td(align="right") 36.55 грн
+                    td(align="center")
+                      input.category__table-number(type="text" value="12")
+                    td(align="center")
+                      a(href="#!").category__table-cart
+                        img(src="./images/icon-cart.svg" width="20" alt="")
+                  tr
+                    td
+                      img(src="./tmp/category-list-1.png", width="36" alt="")
+                    td(align="left")
+                      .category__table-auto Toyota 
+                        span (13565434313)
+                    td(align="left")
+                      a(href="#!").category__table-title Диск сцепления
+                    td(align="right") Не очень новый
+                    td(align="center")
+                      .category__table-term 3/4
+                    td(align="right") 10
+                    td(align="center")
+                      img(src="./tmp/flag-2.png", alt="")
+                    td(align="right") 993.10 грн
+                    td(align="right") 36.55 грн
+                    td(align="center")
+                      input.category__table-number(type="text" value="12")
+                    td(align="center")
+                      a(href="#!").category__table-cart
+                        img(src="./images/icon-cart.svg" width="20" alt="")
+                  tr
+                    td
+                      img(src="./tmp/category-list-1.png", width="36" alt="")
+                    td(align="left")
+                      .category__table-auto Toyota 
+                        span (13565434313)
+                    td(align="left")
+                      a(href="#!").category__table-title Диск сцепления
+                    td(align="right") Новый
+                    td(align="center")
+                      .category__table-term 8/9
+                    td(align="right") 10
+                    td(align="center")
+                      img(src="./tmp/flag-2.png", alt="")
+                    td(align="right") 100.10 грн
+                    td(align="right") 36.55 грн
+                    td(align="center")
+                      input.category__table-number(type="text" value="12")
+                    td(align="center")
+                      a(href="#!").category__table-cart
+                        img(src="./images/icon-cart.svg" width="20" alt="")
+
+    // About
+    .section.about
+      .container
+
+        .row
+          .col-md-6
+            .section__head
+              .h1.nowrap-md Задать вопрос
+              .small.nowrap-md // Вопрос можете задать через форму справа.
+
+            .about__row
+              .row
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--1
+                    div
+                      img(src="./images/img-about-1.svg", alt="")
+                    div
+                      p Мы ответим на все ваши вопросы о продукции 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--2
+                    div
+                      img(src="./images/img-about-2.svg", alt="")
+                    div
+                      p Поможем в формировании заказа 
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--3
+                    div
+                      img(src="./images/img-about-3.svg", alt="")
+                    div
+                      p Вы сможете работать с дистрибьютерами напрямую
+                .col-lg-6.col-md-12.col-sm-6.col-12
+                  .about__block.about__block--4
+                    div
+                      img(src="./images/img-about-4.svg", alt="")
+                    div
+                      p Организуем поставку от ближайшего дистрибьютера
+
+          .col-md-6
+            .about__info.about__info--form
+              form(action="#!").form
+                fieldset
+                  .row
+                    .col-lg-6.col-sm-6
+                      .form-group
+                        label(for="questionName").d-none Ваше имя
+                        input.form-control#questionName(type='text' placeholder='Ваше имя')
+                    .col-lg-6.col-sm-6
+                      .form-group
+                        label(for="questionEmail").d-none E mail
+                        input.form-control#questionEmail(type='text' placeholder='E mail')
+                  .form-group
+                    label(for='questionMessage').d-none Ваш вопрос
+                    textarea.form-control#questionMessage(rows="4" aria-describedby='vinMessage' placeholder='Ваш вопрос')
+                  button.btn.btn-primary.btn-block(type='submit') Отправить
+
+                  label.form-check.form-check--small(for='defaultCheck2').nowrap-md
+                    input.form-check-input#defaultCheck2(type='checkbox' checked)
+                    span.form-check-icon
+                    span.form-check-label
+                      a(href="#!" target="_blank") С политикой конфиденциальности ознакомлен(а)
+
+    .container
+      // Seo
+      .seo.seo--product
+        .seo__document
+          .seo__title О комплектах сцепления
+          .seo__wrapper
+            p Японская торгово-производственная компания MASUMA була основана в 2001 г.., В городе Токио. Идея пролегал в том, чтобы объединить и выпускать основные инструменты и запчасти под Единственным товарным знаком и сделать их доступной по цене альтернативой дорогим оригинальным запчасти. Именно вырабатывать, а не просто упаковывать в свою коробку.
+            p Сегодня компания MASUMA размещает заказ на изготовление деталей под собственным брендом на 80 заводах - производитель запчастей. Сейчас Это уже 45 групп товара и около 8000 наименований. Ежегодно вводиться до 500 Новых позиц и 2-3 Новые группы. В этом году список товаров пополнился гальмивними дисками и ступинчатими Узлы.
+
+    // Map
+    .section.no--p
+      .container
+
+        .main-map__tab
+          ul(role="tablist").nav
+            li
+              a#map1-tab.active(data-toggle="tab" href="#map1" role="tab" aria-controls="map1" aria-selected="true") 
+                span 
+                  i.ion-ios-toggle
+                  | Главный офис 
+            li
+              a#map2-tab(data-toggle="tab" href="#map2" role="tab" aria-controls="map2" aria-selected="false") 
+                span Магазины
+
+          .main-map__office.j-map-tab.is-active
+            .main-map__office-title Связаться с нами:
+            .main-map__office-address г.Киев, ул. Марко Вовчок, 12/14
+            p +380 98 765 43 21
+              br
+              | +380 66 765 43 21  
+              span(style="color: #777777; font-size: 14px;") (Telegram & Viber)
+            p
+              a(href="#!") info@site_name.pro
+      
+      .tab-content.tab-content--main-map
+        #map1.tab-pane.active(role='tabpanel' aria-labelledby='map1-tab')
+
+          .map__wrapper
+            img(src="./images/map-logo.png", alt="").map__wrapper-logo
+            img(src="./tmp/main-map-bottom-1.png", alt="")  
+
+        #map2.tab-pane(role='tabpanel' aria-labelledby='map2-tab')
+          
+          .map__wrapper
+            .map__wrapper-marker
+              img(src="./images/map-icon.png", alt="")
+              .map__wrapper-modal
+                .map__wrapper-modal-title ooo “евроавтоконсалтинг”
+                .map__wrapper-modal-address г.Киев, ул. Петра Горошенка, 12/1
+                p
+                  a(href="tel:") +380 98 765 43 21
+                  br
+                  a(href="tel:") +380 66 765 43 21
+                p
+                  a(href="mailto:") www.euro1autoco.pro
+            img(src="./tmp/main-map-bottom-1.png", alt="")
+
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")

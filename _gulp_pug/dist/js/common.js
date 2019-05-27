@@ -69,6 +69,9 @@ $(document).on('ready', function(){
   headerLang();
   jNavigation();
   searchTab();
+  seoReadmore();
+  tableMore();
+
   mapMarkerTest();
 
   // Chrome Smooth Scroll
@@ -97,6 +100,14 @@ $(window).on('resize', function() {
 
   if (width >= 992 && footerBtn.hasClass('is-active')) {
     footerBtn.add(footerUl).removeClass('is-active');
+  }
+
+  var block = $('.j-seo');
+  var wrapper = block.find('.seo__wrapper');
+
+  if (width >= 768) {
+    wrapper.removeClass('is-hidden');
+    $('.seo__readmore').remove();
   }
 });
 
@@ -263,4 +274,36 @@ function mapMarkerTest() {
       e.stopPropagation();
     });
   });
+}
+
+function seoReadmore() {
+  var width = $(window).width();
+  var block = $('.j-seo');
+  var wrapper = block.find('.seo__wrapper');
+  var count = 0;
+
+  if (width <= 767) {
+    wrapper.addClass('is-hidden');
+    block.append('<a href="#!" class="seo__readmore">Развернуть</a>');
+  } else {
+    wrapper.removeClass('is-hidden');
+  }
+
+  $(document).on('click', '.seo__readmore', function(){
+    if (width <= 767 && wrapper.hasClass('is-hidden')) {
+      wrapper.removeClass('is-hidden');
+      $(this).remove();
+    }
+  });
+}
+
+function tableMore() {
+  var link = $('.one-product__table-more');
+  var tr = link.prev().find('tr.d-none');
+  
+  link.on('click', function(){
+    $(this).remove();
+    tr.removeClass('d-none');
+  });
+  
 }

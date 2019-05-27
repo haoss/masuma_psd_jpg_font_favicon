@@ -136,485 +136,483 @@
                 </div>
             </div>
         </div>
-        <!-- Search-->
-        <div class="section search">
+        <!-- Content-->
+        <div class="content">
             <div class="container">
-                <nav class="search__tab">
-                    <ul class="nav" role="tablist">
-                        <li><a class="active" id="search-tab-1" href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true">Поиск по артикулу</a></li>
-                        <li><a id="search-tab-2" href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false">ПОиск по машине</a></li>
-                        <li><a id="search-tab-3" href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false">Запрос по vin</a></li>
-                    </ul>
-                </nav>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="search-1" role="tabpanel" aria-labelledby="search-tab-1">
-                        <div class="search__form">
-                            <div>
-                                <div class="search__form-input">
-                                    <input class="form-control" type="text" placeholder="Введите ваш запрос, например ОАЕ 12345679">
+                <div class="search">
+                            <nav class="search__tab">
+                                <ul class="nav" role="tablist">
+                                    <li><a class="active" id="search-tab-1" href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true">Поиск по артикулу</a></li>
+                                    <li><a id="search-tab-2" href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false">ПОиск по машине</a></li>
+                                    <li><a id="search-tab-3" href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false">Запрос по vin</a></li>
+                                </ul>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="search-1" role="tabpanel" aria-labelledby="search-tab-1">
+                                    <div class="search__form">
+                                        <div>
+                                            <div class="search__form-input">
+                                                <input class="form-control" type="text" placeholder="Введите ваш запрос, например ОАЕ 12345679">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn-lg" type="button">Найти</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-lg" type="button">Найти</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">
-                        <div class="search__auto">
-                            <form action="#!">
-                                <label class="form-label">тип автомобиля:</label>
-                                <div class="row flex-sm-nowrap">
-                                    <div class="col-auto">
-                                        <div class="form-group">
-                                            <label class="form-radio form-radio--vin" for="radio1">
-                                                <input class="form-radio-input" id="radio1" type="radio" name="radio" checked><span class="form-radio-icon"></span><span class="form-radio-label">Легковые автомобили</span>
+                                <div class="tab-pane" id="search-2" role="tabpanel" aria-labelledby="search-tab-2">
+                                    <div class="search__auto">
+                                        <form action="#!">
+                                            <label class="form-label">тип автомобиля:</label>
+                                            <div class="row flex-sm-nowrap">
+                                                <div class="col-auto">
+                                                    <div class="form-group">
+                                                        <label class="form-radio form-radio--vin" for="radio1">
+                                                            <input class="form-radio-input" id="radio1" type="radio" name="radio" checked><span class="form-radio-icon"></span><span class="form-radio-label">Легковые автомобили</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="form-group">
+                                                        <label class="form-radio form-radio--vin" for="radio2">
+                                                            <input class="form-radio-input" id="radio2" type="radio" name="radio"><span class="form-radio-icon"></span><span class="form-radio-label">Грузовики и автобусы</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear10"></div>
+                                            <div class="search__auto-row">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label class="form-label form-label--pl15px">Рынок:</label>
+                                                            <div class="select-custom">
+                                                                <select name="select1" size="10">
+                                                                    <option value="Европа">Европа </option>
+                                                                    <option value="Корея">Корея </option>
+                                                                    <option value="США">США </option>
+                                                                    <option value="Япония Левый руль">Япония Левый руль </option>
+                                                                    <option value="Япония Правый руль">Япония Правый руль </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label class="form-label form-label--pl15px">Марка:</label>
+                                                            <div class="select-custom">
+                                                                <select name="select2" size="10">
+                                                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                                                    <option value="AUDI">AUDI</option>
+                                                                    <option value="BMW">BMW</option>
+                                                                    <option value="CHEVROLET">CHEVROLET</option>
+                                                                    <option value="CHRYSLER">CHRYSLER</option>
+                                                                    <option value="CITROEN">CITROEN</option>
+                                                                    <option value="FIAT">FIAT</option>
+                                                                    <option value="FORD">FORD</option>
+                                                                    <option value="OPEL">OPEL</option>
+                                                                    <option value="PEUGEOT">PEUGEOT</option>
+                                                                    <option value="ALFA ROMEO">ALFA ROMEO</option>
+                                                                    <option value="AUDI">AUDI</option>
+                                                                    <option value="BMW">BMW</option>
+                                                                    <option value="CHEVROLET">CHEVROLET</option>
+                                                                    <option value="CHRYSLER">CHRYSLER</option>
+                                                                    <option value="CITROEN">CITROEN</option>
+                                                                    <option value="FIAT">FIAT</option>
+                                                                    <option value="FORD">FORD</option>
+                                                                    <option value="OPEL">OPEL</option>
+                                                                    <option value="PEUGEOT">PEUGEOT</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label class="form-label form-label--pl15px">Модель:</label>
+                                                            <div class="select-custom">
+                                                                <select name="select3" size="10">
+                                                                    <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
+                                                                    <option value="AVEO (T250)">AVEO (T250)</option>
+                                                                    <option value="AVEO (T300)">AVEO (T300)</option>
+                                                                    <option value="CAPTIVA">CAPTIVA</option>
+                                                                    <option value="COBALT">COBALT</option>
+                                                                    <option value="CRUZE">CRUZE</option>
+                                                                    <option value="KALOS">KALOS</option>
+                                                                    <option value="LACETTI">LACETTI</option>
+                                                                    <option value="NUBIRA">NUBIRA</option>
+                                                                    <option value="OPTRAS">OPTRAS</option>
+                                                                    <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
+                                                                    <option value="AVEO (T250)">AVEO (T250)</option>
+                                                                    <option value="AVEO (T300)">AVEO (T300)</option>
+                                                                    <option value="CAPTIVA">CAPTIVA</option>
+                                                                    <option value="COBALT">COBALT</option>
+                                                                    <option value="CRUZE">CRUZE</option>
+                                                                    <option value="KALOS">KALOS</option>
+                                                                    <option value="LACETTI">LACETTI</option>
+                                                                    <option value="NUBIRA">NUBIRA</option>
+                                                                    <option value="OPTRAS">OPTRAS</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label class="form-label form-label--pl15px">Год выпуска:</label>
+                                                            <div class="select-custom">
+                                                                <select name="select4" size="10">
+                                                                    <option value="Не знаю">Не знаю</option>
+                                                                    <option value="1993">1993</option>
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1997">1997</option>
+                                                                    <option value="1998">1998</option>
+                                                                    <option value="1999">1999</option>
+                                                                    <option value="2000">2000</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2002">2002</option>
+                                                                    <option value="1993">1993</option>
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1997">1997</option>
+                                                                    <option value="1998">1998</option>
+                                                                    <option value="1999">1999</option>
+                                                                    <option value="2000">2000</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2002">2002</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label class="form-label form-label--pl15px">Кузов</label>
+                                                            <div class="select-custom">
+                                                                <select name="select5" size="10">
+                                                                    <option value="">Не знаю</option>
+                                                                    <option value="">Европа </option>
+                                                                    <option value="">2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO</option>
+                                                                    <option value="">2200cc. SUV. 5D. ДИЗЕЛЬ TURBO</option>
+                                                                    <option value="">2400cc. SUV. 5D. БЕНЗИН MPI.</option>
+                                                                    <option value="">3000cc. SUV. 5D. БЕНЗИН MPI. VVT</option>
+                                                                    <option value="">3200cc. SUV. 5D. БЕНЗИН MPI.</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="clear15"></div>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary btn--search-auto no--m-bottom" type="submit">Подобрать</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="search-3" role="tabpanel" aria-labelledby="search-tab-3">
+                                    <div class="search__vin">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinName">Ваше имя</label>
+                                                    <input class="form-control" id="vinName" type="text" aria-describedby="vinName" placeholder="Ваше имя">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinPhone">Ваш телефон</label>
+                                                    <input class="form-control" id="vinPhone" type="text" aria-describedby="vinPhone" placeholder="Ваш телефон">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinEmail">Ваш e-mail</label>
+                                                    <input class="form-control" id="vinEmail" type="text" aria-describedby="vinEmail" placeholder="Ваш e-mail">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinMark">Марка</label>
+                                                    <input class="form-control" id="vinMark" type="text" aria-describedby="vinMark" placeholder="Марка">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinModel">Модель</label>
+                                                    <input class="form-control" id="vinModel" type="text" aria-describedby="vinModel" placeholder="Модель">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinYear">Год</label>
+                                                    <input class="form-control" id="vinYear" type="text" aria-describedby="vinYear" placeholder="Год">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 order-md-2">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinVin">Vin</label>
+                                                    <input class="form-control" id="vinVin" type="text" aria-describedby="vinVin" placeholder="ASDJH987F44469TTD">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 order-md-1">
+                                                <div class="search__vin-info">Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="d-none" for="vinMessage">Текст запроса</label>
+                                                    <textarea class="form-control" id="vinMessage" rows="4" aria-describedby="vinMessage" placeholder="Текст запроса"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear15"></div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary btn--search-big" type="submit">отправить запрос</button>
+                                            <div class="clear"></div>
+                                            <label class="form-check form-check--small" for="defaultCheck1">
+                                                <input class="form-check-input" id="defaultCheck1" type="checkbox" checked><span class="form-check-icon"></span><span class="form-check-label"><a href="#!" target="_blank">С политикой конфиденциальности ознакомлен(а)</a></span>
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="form-group">
-                                            <label class="form-radio form-radio--vin" for="radio2">
-                                                <input class="form-radio-input" id="radio2" type="radio" name="radio"><span class="form-radio-icon"></span><span class="form-radio-label">Грузовики и автобусы</span>
-                                            </label>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="clear10"></div>
-                                <div class="search__auto-row">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <div class="form-group">
-                                                <label class="form-label form-label--pl15px">Рынок:</label>
-                                                <div class="select-custom">
-                                                    <select name="select1" size="10">
-                                                        <option value="Европа">Европа </option>
-                                                        <option value="Корея">Корея </option>
-                                                        <option value="США">США </option>
-                                                        <option value="Япония Левый руль">Япония Левый руль </option>
-                                                        <option value="Япония Правый руль">Япония Правый руль </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="form-group">
-                                                <label class="form-label form-label--pl15px">Марка:</label>
-                                                <div class="select-custom">
-                                                    <select name="select2" size="10">
-                                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
-                                                        <option value="AUDI">AUDI</option>
-                                                        <option value="BMW">BMW</option>
-                                                        <option value="CHEVROLET">CHEVROLET</option>
-                                                        <option value="CHRYSLER">CHRYSLER</option>
-                                                        <option value="CITROEN">CITROEN</option>
-                                                        <option value="FIAT">FIAT</option>
-                                                        <option value="FORD">FORD</option>
-                                                        <option value="OPEL">OPEL</option>
-                                                        <option value="PEUGEOT">PEUGEOT</option>
-                                                        <option value="ALFA ROMEO">ALFA ROMEO</option>
-                                                        <option value="AUDI">AUDI</option>
-                                                        <option value="BMW">BMW</option>
-                                                        <option value="CHEVROLET">CHEVROLET</option>
-                                                        <option value="CHRYSLER">CHRYSLER</option>
-                                                        <option value="CITROEN">CITROEN</option>
-                                                        <option value="FIAT">FIAT</option>
-                                                        <option value="FORD">FORD</option>
-                                                        <option value="OPEL">OPEL</option>
-                                                        <option value="PEUGEOT">PEUGEOT</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="form-group">
-                                                <label class="form-label form-label--pl15px">Модель:</label>
-                                                <div class="select-custom">
-                                                    <select name="select3" size="10">
-                                                        <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
-                                                        <option value="AVEO (T250)">AVEO (T250)</option>
-                                                        <option value="AVEO (T300)">AVEO (T300)</option>
-                                                        <option value="CAPTIVA">CAPTIVA</option>
-                                                        <option value="COBALT">COBALT</option>
-                                                        <option value="CRUZE">CRUZE</option>
-                                                        <option value="KALOS">KALOS</option>
-                                                        <option value="LACETTI">LACETTI</option>
-                                                        <option value="NUBIRA">NUBIRA</option>
-                                                        <option value="OPTRAS">OPTRAS</option>
-                                                        <option value="ASTROAVEO (T200)">ASTROAVEO (T200)</option>
-                                                        <option value="AVEO (T250)">AVEO (T250)</option>
-                                                        <option value="AVEO (T300)">AVEO (T300)</option>
-                                                        <option value="CAPTIVA">CAPTIVA</option>
-                                                        <option value="COBALT">COBALT</option>
-                                                        <option value="CRUZE">CRUZE</option>
-                                                        <option value="KALOS">KALOS</option>
-                                                        <option value="LACETTI">LACETTI</option>
-                                                        <option value="NUBIRA">NUBIRA</option>
-                                                        <option value="OPTRAS">OPTRAS</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="form-group">
-                                                <label class="form-label form-label--pl15px">Год выпуска:</label>
-                                                <div class="select-custom">
-                                                    <select name="select4" size="10">
-                                                        <option value="Не знаю">Не знаю</option>
-                                                        <option value="1993">1993</option>
-                                                        <option value="1994">1994</option>
-                                                        <option value="1995">1995</option>
-                                                        <option value="1996">1996</option>
-                                                        <option value="1997">1997</option>
-                                                        <option value="1998">1998</option>
-                                                        <option value="1999">1999</option>
-                                                        <option value="2000">2000</option>
-                                                        <option value="2001">2001</option>
-                                                        <option value="2002">2002</option>
-                                                        <option value="1993">1993</option>
-                                                        <option value="1994">1994</option>
-                                                        <option value="1995">1995</option>
-                                                        <option value="1996">1996</option>
-                                                        <option value="1997">1997</option>
-                                                        <option value="1998">1998</option>
-                                                        <option value="1999">1999</option>
-                                                        <option value="2000">2000</option>
-                                                        <option value="2001">2001</option>
-                                                        <option value="2002">2002</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="form-group">
-                                                <label class="form-label form-label--pl15px">Кузов</label>
-                                                <div class="select-custom">
-                                                    <select name="select5" size="10">
-                                                        <option value="">Не знаю</option>
-                                                        <option value="">Европа </option>
-                                                        <option value="">2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO</option>
-                                                        <option value="">2200cc. SUV. 5D. ДИЗЕЛЬ TURBO</option>
-                                                        <option value="">2400cc. SUV. 5D. БЕНЗИН MPI.</option>
-                                                        <option value="">3000cc. SUV. 5D. БЕНЗИН MPI. VVT</option>
-                                                        <option value="">3200cc. SUV. 5D. БЕНЗИН MPI.</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                </div>
+                <!-- Category-->
+                <div class="category">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">автоэлектрика</div><img class="category__block-img" src="./images/category-icon-1.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
-                                <div class="clear15"></div>
-                                <div class="text-center">
-                                    <button class="btn btn-primary btn--search-auto" type="submit">Подобрать</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="tab-pane" id="search-3" role="tabpanel" aria-labelledby="search-tab-3">
-                        <div class="search__vin">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinName">Ваше имя</label>
-                                        <input class="form-control" id="vinName" type="text" aria-describedby="vinName" placeholder="Ваше имя">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinPhone">Ваш телефон</label>
-                                        <input class="form-control" id="vinPhone" type="text" aria-describedby="vinPhone" placeholder="Ваш телефон">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinEmail">Ваш e-mail</label>
-                                        <input class="form-control" id="vinEmail" type="text" aria-describedby="vinEmail" placeholder="Ваш e-mail">
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">Инструменты</div><img class="category__block-img" src="./images/category-icon-2.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinMark">Марка</label>
-                                        <input class="form-control" id="vinMark" type="text" aria-describedby="vinMark" placeholder="Марка">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinModel">Модель</label>
-                                        <input class="form-control" id="vinModel" type="text" aria-describedby="vinModel" placeholder="Модель">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinYear">Год</label>
-                                        <input class="form-control" id="vinYear" type="text" aria-describedby="vinYear" placeholder="Год">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 order-md-2">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinVin">Vin</label>
-                                        <input class="form-control" id="vinVin" type="text" aria-describedby="vinVin" placeholder="ASDJH987F44469TTD">
-                                    </div>
-                                </div>
-                                <div class="col-md-8 order-md-1">
-                                    <div class="search__vin-info">Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">Материалы для шиномонтажа</div><img class="category__block-img" src="./images/category-icon-3.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="d-none" for="vinMessage">Текст запроса</label>
-                                        <textarea class="form-control" id="vinMessage" rows="4" aria-describedby="vinMessage" placeholder="Текст запроса"></textarea>
-                                    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">Дворники</div><img class="category__block-img" src="./images/category-icon-4.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <div class="clear15"></div>
-                            <div class="text-center">
-                                <button class="btn btn-primary btn--search-big" type="submit">отправить запрос</button>
-                                <div class="clear"></div>
-                                <label class="form-check form-check--small" for="defaultCheck1">
-                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" checked><span class="form-check-icon"></span><span class="form-check-label"><a href="#!" target="_blank">С политикой конфиденциальности ознакомлен(а)</a></span>
-                                </label>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">Трансмиссия и ходовая часть</div><img class="category__block-img" src="./images/category-icon-5.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">фильтры</div><img class="category__block-img" src="./images/category-icon-6.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">топливная система</div><img class="category__block-img" src="./images/category-icon-7.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">автомобильные крепления</div><img class="category__block-img" src="./images/category-icon-8.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__block">
+                                <div class="category__block-wrapper">
+                                    <div class="category__block-title">Двигатель и составляющие</div><img class="category__block-img" src="./images/category-icon-9.svg" alt="">
+                                    <nav class="category__block-list">
+                                        <ul>
+                                            <li><a href="#!">Домкраты и упоры</a></li>
+                                            <li><a href="#!">Измерительный инструмент</a></li>
+                                            <li><a href="#!">Манометры</a></li>
+                                            <li><a href="#!">Компрессоры</a></li>
+                                            <li><a href="#!">Ручной инструмент</a></li>
+                                            <li><a href="#!">Ключи</a></li>
+                                            <li><a href="#!">Наборы</a></li>
+                                            <li><a href="#!">Отвертки</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Category-->
-        <div class="section category">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автоэлектрика</div><img class="category__block-img" src="./images/category-icon-1.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
+                <!-- News-->
+                <div class="news">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12">
+                            <div class="news__head">Новости компании и отрасли, а так же акции наших партнеров</div>
+                            <div class="news__filter">
+                                <p>отфильтровать вывод:</p><a class="a" href="#!">новости</a><a class="a a--action" href="#!">Акция</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Инструменты</div><img class="category__block-img" src="./images/category-icon-2.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Материалы для шиномонтажа</div><img class="category__block-img" src="./images/category-icon-3.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Дворники</div><img class="category__block-img" src="./images/category-icon-4.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Трансмиссия и ходовая часть</div><img class="category__block-img" src="./images/category-icon-5.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">фильтры</div><img class="category__block-img" src="./images/category-icon-6.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">топливная система</div><img class="category__block-img" src="./images/category-icon-7.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">автомобильные крепления</div><img class="category__block-img" src="./images/category-icon-8.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="category__block">
-                            <div class="category__block-wrapper">
-                                <div class="category__block-title">Двигатель и составляющие</div><img class="category__block-img" src="./images/category-icon-9.svg" alt="">
-                                <nav class="category__block-list">
-                                    <ul>
-                                        <li><a href="#!">Домкраты и упоры</a></li>
-                                        <li><a href="#!">Измерительный инструмент</a></li>
-                                        <li><a href="#!">Манометры</a></li>
-                                        <li><a href="#!">Компрессоры</a></li>
-                                        <li><a href="#!">Ручной инструмент</a></li>
-                                        <li><a href="#!">Ключи</a></li>
-                                        <li><a href="#!">Наборы</a></li>
-                                        <li><a href="#!">Отвертки</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- News-->
-        <div class="section news">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12">
-                        <div class="news__head">Новости компании и отрасли, а так же акции наших партнеров</div>
-                        <div class="news__filter">
-                            <p>отфильтровать вывод:</p><a class="a" href="#!">новости</a><a class="a a--action" href="#!">Акция</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-1.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Хэтчбек Hyundai после рестайлинга стал мощнее и дальнобойнее </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div> <i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250  </div>
-                                <div>
-                                    <time>01.05.2019</time>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="news__block">
+                                <div class="news__block-label">Новости</div>
+                                <div class="news__block-thumb"><img src="./tmp/news/news-img-1.png" alt=""></div>
+                                <div class="news__block-content">
+                                    <div class="news__block-title">Хэтчбек Hyundai после рестайлинга стал мощнее и дальнобойнее </div>
+                                    <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
+                                </div>
+                                <div class="news__block-info">
+                                    <div> <i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250  </div>
+                                    <div>
+                                        <time>01.05.2019</time>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="news__block">
-                            <div class="news__block-label">Новости</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-2.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Превратившийся в кроссовер Kia Ceed: больше и выше, но только с передним приводом </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="news__block">
+                                <div class="news__block-label">Новости</div>
+                                <div class="news__block-thumb"><img src="./tmp/news/news-img-2.png" alt=""></div>
+                                <div class="news__block-content">
+                                    <div class="news__block-title">Превратившийся в кроссовер Kia Ceed: больше и выше, но только с передним приводом </div>
+                                    <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
+                                </div>
+                                <div class="news__block-info">
+                                    <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
+                                    <div>
+                                        <time>01.05.2019</time>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 d-md-none d-lg-block">
-                        <div class="news__block last">
-                            <div class="news__block-label news__block-label--action">Акция</div>
-                            <div class="news__block-thumb"><img src="./tmp/news/news-img-3.png" alt=""></div>
-                            <div class="news__block-content">
-                                <div class="news__block-title">Original Meet: лучшие классические и кастомные автомобили и мотоциклы </div>
-                                <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
-                            </div>
-                            <div class="news__block-info">
-                                <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
-                                <div>
-                                    <time>01.05.2019</time>
+                        <div class="col-lg-3 d-md-none d-lg-block">
+                            <div class="news__block last">
+                                <div class="news__block-label news__block-label--action">Акция</div>
+                                <div class="news__block-thumb"><img src="./tmp/news/news-img-3.png" alt=""></div>
+                                <div class="news__block-content">
+                                    <div class="news__block-title">Original Meet: лучшие классические и кастомные автомобили и мотоциклы </div>
+                                    <p>В Сеть выложили фотографию нового члена семейства Ceed без какого-либо камуфляжа. Публичная премьера паркетника может состояться этой осенью.</p>
+                                </div>
+                                <div class="news__block-info">
+                                    <div><i class="ion-eye"></i>10<span class="span"></span><i class="ion-thumbsup"></i>250</div>
+                                    <div>
+                                        <time>01.05.2019</time>
+                                    </div>
                                 </div>
                             </div>
                         </div>

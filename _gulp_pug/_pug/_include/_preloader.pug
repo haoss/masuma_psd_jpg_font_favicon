@@ -3,3 +3,205 @@
 //-     div
 //-     div
 //-     div
+
+mixin searchBody
+  nav.search__tab
+    ul.nav(role="tablist")
+      li: a#search-tab-1.active(href="#search-1" data-toggle="tab" role="tab" aria-controls="search-1" aria-selected="true") Поиск по артикулу
+      li: a#search-tab-2(href="#search-2" data-toggle="tab" role="tab" aria-controls="search-2" aria-selected="false") ПОиск по машине
+      li: a#search-tab-3(href="#search-3" data-toggle="tab" role="tab" aria-controls="search-3" aria-selected="false") Запрос по vin
+
+  .tab-content
+    .tab-pane.active#search-1(role='tabpanel' aria-labelledby='search-tab-1')
+      .search__form
+        div
+          .search__form-input
+            input(type="text" placeholder="Введите ваш запрос, например ОАЕ 12345679").form-control
+        div
+          button(type="button").btn.btn-primary.btn-lg Найти
+
+    .tab-pane#search-2(role='tabpanel' aria-labelledby='search-tab-2')
+      .search__auto
+        form(action="#!")
+          label.form-label тип автомобиля:
+
+          .row.flex-sm-nowrap
+            .col-auto
+              .form-group
+                label.form-radio.form-radio--vin(for='radio1')
+                  input.form-radio-input#radio1(type='radio' name="radio" checked)
+                  span.form-radio-icon
+                  span.form-radio-label Легковые автомобили
+            .col-auto
+              .form-group
+                label.form-radio.form-radio--vin(for='radio2')
+                  input.form-radio-input#radio2(type='radio' name="radio")
+                  span.form-radio-icon
+                  span.form-radio-label Грузовики и автобусы
+
+          .clear10
+          
+          .search__auto-row
+            .row
+              .col-auto
+                .form-group
+                  label.form-label.form-label--pl15px Рынок:
+                  .select-custom
+                    select(name="select1" size="10")
+                      option(value="Европа") Европа 
+                      option(value="Корея") Корея 
+                      option(value="США") США 
+                      option(value="Япония Левый руль") Япония Левый руль 
+                      option(value="Япония Правый руль") Япония Правый руль 
+              .col-auto
+                .form-group
+                  label.form-label.form-label--pl15px Марка:
+                  .select-custom
+                    select(name="select2" size="10")
+                      option(value="ALFA ROMEO") ALFA ROMEO
+                      option(value="AUDI") AUDI
+                      option(value="BMW") BMW
+                      option(value="CHEVROLET") CHEVROLET
+                      option(value="CHRYSLER") CHRYSLER
+                      option(value="CITROEN") CITROEN
+                      option(value="FIAT") FIAT
+                      option(value="FORD") FORD
+                      option(value="OPEL") OPEL
+                      option(value="PEUGEOT") PEUGEOT
+                      option(value="ALFA ROMEO") ALFA ROMEO
+                      option(value="AUDI") AUDI
+                      option(value="BMW") BMW
+                      option(value="CHEVROLET") CHEVROLET
+                      option(value="CHRYSLER") CHRYSLER
+                      option(value="CITROEN") CITROEN
+                      option(value="FIAT") FIAT
+                      option(value="FORD") FORD
+                      option(value="OPEL") OPEL
+                      option(value="PEUGEOT") PEUGEOT
+              .col-auto
+                .form-group
+                  label.form-label.form-label--pl15px Модель:
+                  .select-custom
+                    select(name="select3" size="10")
+                      option(value="ASTROAVEO (T200)") ASTROAVEO (T200)
+                      option(value="AVEO (T250)") AVEO (T250)
+                      option(value="AVEO (T300)") AVEO (T300)
+                      option(value="CAPTIVA") CAPTIVA
+                      option(value="COBALT") COBALT
+                      option(value="CRUZE") CRUZE
+                      option(value="KALOS") KALOS
+                      option(value="LACETTI") LACETTI
+                      option(value="NUBIRA") NUBIRA
+                      option(value="OPTRAS") OPTRAS
+                      option(value="ASTROAVEO (T200)") ASTROAVEO (T200)
+                      option(value="AVEO (T250)") AVEO (T250)
+                      option(value="AVEO (T300)") AVEO (T300)
+                      option(value="CAPTIVA") CAPTIVA
+                      option(value="COBALT") COBALT
+                      option(value="CRUZE") CRUZE
+                      option(value="KALOS") KALOS
+                      option(value="LACETTI") LACETTI
+                      option(value="NUBIRA") NUBIRA
+                      option(value="OPTRAS") OPTRAS
+              .col-auto
+                .form-group
+                  label.form-label.form-label--pl15px Год выпуска:
+                  .select-custom
+                    select(name="select4" size="10")
+                      option(value="Не знаю") Не знаю
+                      option(value="1993") 1993
+                      option(value="1994") 1994
+                      option(value="1995") 1995
+                      option(value="1996") 1996
+                      option(value="1997") 1997
+                      option(value="1998") 1998
+                      option(value="1999") 1999
+                      option(value="2000") 2000
+                      option(value="2001") 2001
+                      option(value="2002") 2002
+                      option(value="1993") 1993
+                      option(value="1994") 1994
+                      option(value="1995") 1995
+                      option(value="1996") 1996
+                      option(value="1997") 1997
+                      option(value="1998") 1998
+                      option(value="1999") 1999
+                      option(value="2000") 2000
+                      option(value="2001") 2001
+                      option(value="2002") 2002
+              .col-auto
+                .form-group
+                  label.form-label.form-label--pl15px Кузов
+                  .select-custom
+                    select(name="select5" size="10")
+                      option(value="") Не знаю
+                      option(value="") Европа 
+                      option(value="") 2000cc. SUV. 5D. ДИЗЕЛЬ. TURBO
+                      option(value="") 2200cc. SUV. 5D. ДИЗЕЛЬ TURBO
+                      option(value="") 2400cc. SUV. 5D. БЕНЗИН MPI.
+                      option(value="") 3000cc. SUV. 5D. БЕНЗИН MPI. VVT
+                      option(value="") 3200cc. SUV. 5D. БЕНЗИН MPI.
+          
+          .clear15
+          .text-center
+            button.btn.btn-primary.btn--search-auto.no--m-bottom(type="submit") Подобрать
+
+    .tab-pane#search-3(role='tabpanel' aria-labelledby='search-tab-3')
+      .search__vin
+        .row
+          .col-md-4
+            .form-group
+              label(for='vinName').d-none Ваше имя
+              input.form-control#vinName(type='text' aria-describedby='vinName' placeholder='Ваше имя')
+          .col-md-4
+            .form-group
+              label(for='vinPhone').d-none Ваш телефон
+              input.form-control#vinPhone(type='text' aria-describedby='vinPhone' placeholder='Ваш телефон')
+          .col-md-4
+            .form-group
+              label(for='vinEmail').d-none Ваш e-mail
+              input.form-control#vinEmail(type='text' aria-describedby='vinEmail' placeholder='Ваш e-mail')
+        .row
+          .col-md-4
+            .form-group
+              label(for='vinMark').d-none Марка
+              input.form-control#vinMark(type='text' aria-describedby='vinMark' placeholder='Марка')
+          .col-md-4
+            .form-group
+              label(for='vinModel').d-none Модель
+              input.form-control#vinModel(type='text' aria-describedby='vinModel' placeholder='Модель')
+          .col-md-4
+            .form-group
+              label(for='vinYear').d-none Год
+              input.form-control#vinYear(type='text' aria-describedby='vinYear' placeholder='Год')
+        .row
+          .col-md-4.order-md-2
+            .form-group
+              label(for='vinVin').d-none Vin
+              input.form-control#vinVin(type='text' aria-describedby='vinVin' placeholder='ASDJH987F44469TTD')
+          .col-md-8.order-md-1
+            .search__vin-info Обязательно укажите VIN номер автомобиля. Это значительно ускорит поиск, точность подбора и качество запасных частей и расходных материалов.
+        .row
+          .col-md-12
+            .form-group
+              label(for='vinMessage').d-none Текст запроса
+              textarea.form-control#vinMessage(rows="4" aria-describedby='vinMessage' placeholder='Текст запроса')
+
+        .clear15
+        .text-center
+          button.btn.btn-primary.btn--search-big(type="submit") отправить запрос
+          
+          .clear
+
+          label.form-check.form-check--small(for='defaultCheck1')
+            input.form-check-input#defaultCheck1(type='checkbox' checked)
+            span.form-check-icon
+            span.form-check-label
+              a(href="#!" target="_blank") С политикой конфиденциальности ознакомлен(а)
+
+mixin breadcrumbs
+  .breadcrumbs
+    ul
+      li: a(href="#!") MASUMA
+      li: a(href="#!") Название категории
+      li: span Название подкатегории
