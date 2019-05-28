@@ -146,6 +146,23 @@
   .breadcrumbs {
     margin-left: 176px;
   }
+  .one-product {
+    &__wrapper {
+      padding-right: 177px;
+    }
+    &__price {
+      width: 177px;
+      &-info {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    &__advantages {
+      &>div {
+        width: auto;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -521,6 +538,48 @@
       }
     }
   }
+  .one-product {
+    &__wrapper {
+      padding-right: 10px;
+      &-top {
+        &>div {
+          &:first-child {
+            width: 220px;
+          }
+        }
+      }
+    }
+    &__price {
+      position: relative;
+      width: calc(100% + 20px);
+      margin-left: -10px;
+      margin-right: -10px;
+      padding: 20px 10px;
+      &-wrapper {
+        display: flex;
+        align-items: center;
+      }
+      &-top {
+        display: flex;
+        align-items: center;
+        .btn {
+          width: 147px;
+        }
+        &>div {
+          &+div {
+            padding: 0 0 0 10px;
+          }
+          &:first-child {
+            padding: 0 30px;
+          }
+        }
+      }
+      &-info {
+        padding-top: 0;
+        padding-left: 35px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -803,6 +862,69 @@
       }
     }
   }
+  .one-product {
+    &__wrapper {
+      &-top {
+        flex-direction: column;
+        &>div {
+          &:first-child {
+            width: 100%;
+          }
+          &+div {
+            padding-left: 0;
+            padding-top: 30px;
+          }
+        }
+      }
+      &-img {
+        margin: 0 auto;
+      }
+      &-content {
+        table {
+          td {
+            width: 50%;
+          }
+        }
+      }
+    }
+    &__advantages {
+      &>div {
+        width: 33.3%;
+      }
+      &-block  {
+        font-size: 12px;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+    &__price {
+      padding-top: 35px;
+      &-wrapper {
+        flex-direction: column;
+      }
+      &-info {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top: 1px solid #d1d8dd;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+      &-top {
+        .btn {
+          height: 50px;
+          width: 228px;
+          line-height: 37px;
+        }
+        &>div {
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -980,6 +1102,28 @@
   }
   .map-contact {
     padding-top: 45px;
+  }
+  .one-product {
+    &__advantages {
+      flex-direction: column;
+      &>div {
+        width: 205px;
+        margin: 0 auto;
+      }
+      &-block {
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+    &__price {
+      padding-left: 0;
+      padding-right: 0;
+      &-top {
+        .btn {
+          width: 150px;
+        }
+      }
+    }
   }
 }
 

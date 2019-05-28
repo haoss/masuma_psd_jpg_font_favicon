@@ -1266,4 +1266,134 @@
       display: inline-block;
     }
   }
+  &__wrapper {
+    background: $color-white;
+    box-shadow: 0 6px 20px rgba(0,0,0,.04);
+    margin: 0 -15px 40px -15px;
+    padding: 35px 210px 0 10px;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    &-top {
+      display: flex;
+      padding-bottom: 25px;
+      padding-right: 15px;
+      &>div {
+        flex-grow: 1;
+        &+div {
+          padding-left: 15px;
+        }
+        &:first-child {
+          width: 278px;
+          flex-shrink: 0;
+          flex-grow: 0;
+        }
+      }
+    }
+    &-img {
+      display: block;
+      max-width: 100%;
+    }
+    &-name {
+      color: $color-orange;
+      line-height: 1.2;
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    &-content {
+      table {
+        margin-bottom: 10px;
+        td {
+          padding: 0 0 10px 0;
+          &+td {
+            padding-left: 10px;
+          }
+        }
+        tr {
+          &:last-child {
+            td {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__advantages {
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    &>div {
+      width: 33.3%;
+    }
+    &-block {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      height: 80px;
+      font-weight: bold;
+      div {
+        line-height: 1.2;
+        margin-left: 15px;
+      }
+      img {
+        flex-shrink: 1;
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+  &__price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 210px;
+    background: #e9f1f6;
+    padding: 35px 15px 10px 15px;
+    .btn {
+      display: block;
+      height: 40px;
+      text-decoration: none;
+      img {
+        width: 19px;
+        height: 17px;
+        display: inline-block;
+        vertical-align: 2px;
+        margin-right: 14px;
+        position: relative;
+        top: 5px;
+      }
+    }
+    &-top {
+      text-align: center;
+      &>div {
+        &:first-child {
+          display: inline-block;
+          text-align: left;
+        }
+        &+div {
+          padding-top: 25px;
+        }
+      }
+      strong {
+        font-size: 40px;
+        display: inline-block;
+        line-height: 1;
+        white-space: nowrap;
+      }
+    }
+    &-info {
+      overflow: hidden;
+      color: #787878;
+      font-size: 12px;
+      padding: 35px 10px 0 10px;
+      line-height: 18px;
+    }
+  }
 }
