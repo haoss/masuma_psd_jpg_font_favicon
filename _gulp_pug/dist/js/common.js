@@ -71,6 +71,7 @@ $(document).on('ready', function(){
   searchTab();
   seoReadmore();
   tableMore();
+  filter();
 
   mapMarkerTest();
 
@@ -307,3 +308,22 @@ function tableMore() {
   });
   
 }
+
+function filter() {
+  $('.a--filter').on('click', function(e){
+    e.preventDefault();
+    var _this = $(this);
+    var value = _this.attr('data-filter');
+
+    if (_this.hasClass('is-active')) {
+      _this.removeClass('is-active');
+      $('.filter').show();
+    } else {
+      $(".filter").not('.'+value).hide();
+      $('.filter').filter('.'+value).show();
+      $('.a--filter').removeClass('is-active');
+      _this.addClass('is-active');
+    }
+  });
+};
+  

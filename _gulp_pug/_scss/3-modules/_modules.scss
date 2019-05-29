@@ -207,7 +207,7 @@
         right: 0;
         width: 20px;
         height: 20px;
-        color: #232323;
+        color: $primary-color-dark;
         font-size: 12px;
         content: "\f30f";
         transform-origin: 50%;
@@ -223,7 +223,7 @@
       text-transform: uppercase;
       font-size: 18px;
       line-height: 1.2;
-      color: #232323;
+      color: $primary-color-dark;
       margin: 15px 100px 20px 18px;
     }
     &-img {
@@ -294,7 +294,7 @@
     margin: 0 -15px 24px -15px;
     padding: 30px 10px 0 10px;
     display: flex;
-    color: #232323;
+    color: $primary-color-dark;
     font-size: 14px;
     font-weight: 500;
     &>div {
@@ -394,11 +394,11 @@
         width: 194px;
         text-align: center;
         text-decoration: none;
-        color: #232323;
+        color: $primary-color-dark;
         transition: all 0.35s;
         padding: 0 10px;
         span {
-          border-bottom: 1px dashed #232323;
+          border-bottom: 1px dashed $primary-color-dark;
           transition: all 0.35s;
         }
         img {
@@ -438,7 +438,7 @@
     table {
       font-weight: 500;
       width: 100%;
-      color: #232323;
+      color: $primary-color-dark;
       white-space: nowrap;
       min-width: 980px;
       thead {
@@ -508,7 +508,7 @@
     &-title {
       text-decoration: none;
       text-transform: uppercase;
-      color: #232323;
+      color: $primary-color-dark;
       &:hover {
         color: $color-orange;
       }
@@ -748,7 +748,7 @@
       right: 0;
       z-index: 5;
       width: 295px;
-      color: #232323;
+      color: $primary-color-dark;
       padding: 22px 29px;
       display: none;
       &.is-active {
@@ -767,7 +767,7 @@
         margin-bottom: 10px;
       }
       a {
-        color: #232323;
+        color: $primary-color-dark;
         text-decoration: underline;
         display: inline-block;
         line-height: 1.2;
@@ -952,11 +952,11 @@
 }
 
 .news {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
   padding-top: 0;
   &__head {
     background: #e9f1f6;
-    color: #232323;
+    color: $primary-color-dark;
     font-size: 20px;
     font-weight: bold;
     line-height: 35px;
@@ -968,7 +968,7 @@
     font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #232323;
+    color: $primary-color-dark;
     p {
       margin-bottom: 10px;
     }
@@ -980,21 +980,32 @@
       line-height: 21px;
       color: $color-white;
       text-decoration: none;
-      background: #f58220;
+      background: $color-orange;
       padding: 0 10px;
       border-radius: 25px;
       &+a {
         margin-left: 19px;
       }
+      &:hover {
+        background: darken($color-orange,10%);
+      }
       &.a--action {
-        color: #232323;
+        color: $primary-color-dark;
         background: #efbc5d;
+        &:hover {
+          background: darken(#efbc5d,10%);
+        }
+      }
+      &.is-active {
+        background: #e9f1f6 !important;
+        color: $primary-color !important;
       }
     }
   }
   &__block {
     position: relative;
     height: 340px;
+    margin-bottom: 30px;
     &-label {
       font-size: 10px;
       text-transform: uppercase;
@@ -1007,13 +1018,13 @@
       line-height: 21px;
       color: $color-white;
       text-decoration: none;
-      background: #f58220;
+      background: $color-orange;
       padding: 0 10px;
       border-radius: 25px;
       left: 18px;
       top: 18px;
       &--action {
-        color: #232323;
+        color: $primary-color-dark;
         background: #efbc5d;
       }
     }
@@ -1095,7 +1106,7 @@
   padding-top: 50px;
   padding-bottom: 20px;
   &__info {
-    color: #232323;
+    color: $primary-color-dark;
     font-size: 14px;
     p {
       line-height: 1.5;
@@ -1118,7 +1129,7 @@
   }
   &__block {
     background: #e9f1f6;
-    color: #232323;
+    color: $primary-color-dark;
     padding: 20px 50px 20px 24px;
     position: relative;
     min-height: 176px;
@@ -1163,7 +1174,7 @@
       }
     }
     a {
-      color: #232323;
+      color: $primary-color-dark;
       &[href*="tel:"] {
         text-decoration: none;
       }
@@ -1215,7 +1226,7 @@
   padding-top: 0;
   padding-bottom: 0;
   font-size: 14px;
-  color: #535353;
+  color: $primary-color;
   &__document {
     border-bottom: 1px solid #e5e5e5;
     padding: 0 15px 30px 15px;
@@ -1223,7 +1234,7 @@
   }
   &__title {
     font-weight: bold;
-    color: #232323;
+    color: $primary-color-dark;
     margin-bottom: 15px;
     font-size: 20px;
   }
@@ -1271,7 +1282,7 @@
     box-shadow: 0 6px 20px rgba(0,0,0,.04);
     margin: 0 -15px 40px -15px;
     padding: 35px 210px 0 10px;
-    color: #232323;
+    color: $primary-color-dark;
     font-size: 14px;
     font-weight: 500;
     position: relative;

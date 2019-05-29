@@ -175,9 +175,9 @@ html(lang="ru")
               .news__head Новости компании и отрасли, а так же акции наших партнеров
               .news__filter
                 p отфильтровать вывод:
-                a(href="#!").a новости
-                a(href="#!").a.a--action Акция
-            .col-lg-3.col-md-6
+                a(href="#!" data-filter="filterNews").a.a--filter новости
+                a(href="#!" data-filter="filterActions").a.a--filter.a--action Акция
+            .filter.filterNews.col-lg-3.col-md-6
               .news__block
                 .news__block-label Новости
                 .news__block-thumb
@@ -194,7 +194,7 @@ html(lang="ru")
                     | 250  
                   div
                     time 01.05.2019
-            .col-lg-3.col-md-6
+            .filter.filterNews.col-lg-3.col-md-6
               .news__block
                 .news__block-label Новости
                 .news__block-thumb
@@ -211,7 +211,7 @@ html(lang="ru")
                     | 250
                   div
                     time 01.05.2019
-            .col-lg-3.d-md-none.d-lg-block
+            .filter.filterActions.col-lg-3.col-md-6
               .news__block.last
                 .news__block-label.news__block-label--action Акция
                 .news__block-thumb
